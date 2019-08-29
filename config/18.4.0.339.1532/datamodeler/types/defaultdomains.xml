@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="defaultdomains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="DIRECTION" id="67C15572-DCF1-CF3A-F756-C51B46803BE2">
+         <createdBy>gjpau</createdBy>
+         <createdTime>2019-07-19 10:00:36 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <listOfValues>
+            <valueDef value="+1" description="Ascending"/>
+            <valueDef value="-1" description="Descending"/>
+         </listOfValues>
+      </Domain>
+   </domains>
+</DomainFile>

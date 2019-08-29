@@ -1,0 +1,13 @@
+# Ignore everything
+*
+# Don't ignore directories, so we can recurse into them
+!*/
+# Don't ignore .gitignore and *.foo files
+!.gitignore
+!*.xml
+# includes client paths
+product-preferences.xml
+# debugging
+hs_breakpoints.xml
+# do not include system_cache directories
+**/system_cache*/**

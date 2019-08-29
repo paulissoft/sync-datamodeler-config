@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ide:extension-preferences xmlns:ide="http://xmlns.oracle.com/ide/hash">
+   <list n="featuresToReloadAtStartup">
+      <string v="vcs-subversion-support"/>
+      <string v="oracle.sqldeveloper.filenavigator"/>
+      <string v="oracle.sqldeveloper.jdbcproxy"/>
+      <string v="oracle.sqldeveloper.cloud"/>
+      <string v="oracle.sqldeveloper.ssh"/>
+      <string v="oracle.sqldeveloper.onsd"/>
+   </list>
+</ide:extension-preferences>
