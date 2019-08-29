@@ -6,8 +6,9 @@
 !.gitignore
 !*.xml
 !*.pl
+!*.md
 # includes client paths
-product-preferences.xml
+# product-preferences.xml
 # debugging
 hs_breakpoints.xml
 # do not include system_cache directories

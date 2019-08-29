@@ -811,4 +811,8 @@
       <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Mode</Key>
       <Value class="java.lang.String">Incoming Changes</Value>
    </Item>
+   <Item>
+      <Key>oracle.jdevimpl.vcs.svn.op.SVNOperationCheckout.lastCoRoot</Key>
+      <Value class="java.lang.String">C:\Users\gjpau\Documents\GitHub</Value>
+   </Item>
 </dt-cache>
