@@ -19,11 +19,11 @@ one) and restore them when needed. This project tries to accomplish just that: K
 ## Usage
 
 The programming language Perl is used for the backup and restore script
-bin/datamodeler_config.pl.
+datamodeler_config.pl.
 
 For help type:
 
-$ perl <path to bin>/datamodeler_config.pl --help
+$ perl <path to>/datamodeler_config.pl --help
 
 ## Global configuration
 

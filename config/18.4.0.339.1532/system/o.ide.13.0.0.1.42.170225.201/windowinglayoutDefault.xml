@@ -1,8 +1,8 @@
 <LayoutInfo>
    <clientLayoutData>
       <global>
-         <view-data ClosedByUser="false" ID="LogWindow.Log"/>
          <view-data ID="ExplorerWindow.SingletonExplorerWindow" ExplorerWindow.SingletonExplorerWindow.placeholder="foo"/>
+         <view-data ClosedByUser="false" ID="LogWindow.Log"/>
       </global>
       <Editing layout-name="Editing">
          <view-data USE_LARGE_ICONS="true" pageSelection="" ID="PALETTEFACTORY.PALETTE"/>
