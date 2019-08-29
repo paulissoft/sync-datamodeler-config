@@ -23,7 +23,7 @@ datamodeler_config.pl.
 
 For help type:
 
-$ perl <path to>/datamodeler_config.pl --help
+$ perl datamodeler_config.pl --help
 
 ## Global configuration
 
