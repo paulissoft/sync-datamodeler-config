@@ -24,7 +24,7 @@
 <forceLinebreaksBeforeComment>false</forceLinebreaksBeforeComment>
 <alignTypeDecl>true</alignTypeDecl>
 <breakParenCondition>false</breakParenCondition>
-<identSpaces>4</identSpaces>
+<identSpaces>2</identSpaces>
 <breaksAfterSelect>true</breaksAfterSelect>
 <spaceAfterCommas>true</spaceAfterCommas>
 <kwCase>oracle.dbtools.app.Format.Case.UPPER</kwCase>

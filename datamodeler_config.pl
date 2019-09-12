@@ -84,7 +84,7 @@ First version.
 
 =cut
 
-use 5.030000; # Strawberry perl: 5.30.0
+use 5.026; # Strawberry perl: 5.30.0
 
 use autodie; # automatically die when a system call gives an error (for example open)
 use strict;
