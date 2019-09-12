@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<report_templates>
+	<standard_report id="79519442-B4B0-B1E3-05B2-614C62A333FE" name="All entities" description="" design="E1D5CA68-3401-62E4-063F-EED0668105AD" model="FBC04B0B-0144-7E32-AC8F-5FE1852E59D0" inc_dp="true" class="oracle.dbtools.crest.model.design.logical.Entity">
+	</standard_report>
+	<standard_report id="34C760D2-3CE7-CD46-257A-ED7F98265240" name="Objective entities" description="" design="E1D5CA68-3401-62E4-063F-EED0668105AD" model="FBC04B0B-0144-7E32-AC8F-5FE1852E59D0" inc_dp="true" class="oracle.dbtools.crest.model.design.logical.Entity">
+		<subviews>
+			<subview id="6AA3AEDC-5F19-7589-2CCA-4285DD192815" />
+		</subviews>
+		<objects>
+			<object id="7E4CC117-AD5F-A322-971B-D7C27BF80447" />
+			<object id="DF92E1D8-4A0C-C804-E5D0-D5F03700A8DD" />
+			<object id="D56CA647-C8EA-C76B-E856-37F7CF51D660" />
+			<object id="539EF969-9CF8-4E6C-8964-B89C11093869" />
+			<object id="2FDC05A5-3F12-9946-F77D-EE830AA8C818" />
+			<object id="DFB8327B-F30F-927D-7D7D-D3F28EC9798B" />
+			<object id="13FB3354-4098-E2EC-7C3D-A41254648EEB" />
+			<object id="D7B08878-BBC3-7CDD-D9E2-544930159A5D" />
+			<object id="A07B9E5D-3733-9E55-29AE-8BB8CD910CCE" />
+			<object id="1F5A5F0D-CC29-693B-E1F0-95796C9F516A" />
+		</objects>
+	</standard_report>
+	<standard_report id="59D20538-39A9-6ADF-47BC-FE50C3C5030D" name="Objective plan entities" description="" design="E1D5CA68-3401-62E4-063F-EED0668105AD" model="FBC04B0B-0144-7E32-AC8F-5FE1852E59D0" inc_dp="true" class="oracle.dbtools.crest.model.design.logical.Entity">
+		<subviews>
+			<subview id="2BE28119-F1CC-B0B4-F615-938C341322C6" />
+		</subviews>
+		<objects>
+			<object id="B44F2D50-BF05-B879-1255-843F98BE8ECA" />
+			<object id="7E4CC117-AD5F-A322-971B-D7C27BF80447" />
+			<object id="DF92E1D8-4A0C-C804-E5D0-D5F03700A8DD" />
+			<object id="D56CA647-C8EA-C76B-E856-37F7CF51D660" />
+			<object id="8C4F56E0-ED45-157F-4A7E-1DA7E591BB1E" />
+			<object id="A9F29471-D4D0-CFB0-27BE-8EEAFDBA47F4" />
+			<object id="5620AEA2-82B6-BA7B-064E-505AEAC504E5" />
+			<object id="2FDC05A5-3F12-9946-F77D-EE830AA8C818" />
+			<object id="1F5A5F0D-CC29-693B-E1F0-95796C9F516A" />
+		</objects>
+	</standard_report>
+	<standard_report id="BA5AF1DA-4FB2-067A-D8CF-B4EC45357E26" name="Collaborator entities" description="" design="E1D5CA68-3401-62E4-063F-EED0668105AD" model="FBC04B0B-0144-7E32-AC8F-5FE1852E59D0" inc_dp="true" class="oracle.dbtools.crest.model.design.logical.Entity">
+		<subviews>
+			<subview id="C1B3FD26-1125-DE47-CB53-9252FA5E4F88" />
+		</subviews>
+		<objects>
+			<object id="D3617334-66B9-7EE7-C9F2-159EEBCF529E" />
+			<object id="52FB4F43-CF97-943A-76A5-AEC8D8EC1E2B" />
+			<object id="3DEE2CD2-7109-4F42-C232-7FCC8D9054CA" />
+			<object id="8BB195EF-3A07-58DF-082D-CEADC7DB6487" />
+			<object id="F755E57A-6BCE-A049-E947-59BEF7C4FA06" />
+			<object id="270F451C-FF56-E3CD-C4BE-7FA3FC9F11EF" />
+			<object id="F1641385-795B-C0AE-F2DA-01A723818D8D" />
+			<object id="D0EB2F69-8899-0321-6A63-5BC10A8613A4" />
+			<object id="2269F915-CE3C-B65E-401C-F4F0045F7284" />
+			<object id="8C4F56E0-ED45-157F-4A7E-1DA7E591BB1E" />
+			<object id="9F3D9C33-72AB-E0E0-7A91-533D83249416" />
+		</objects>
+	</standard_report>
+</report_templates>

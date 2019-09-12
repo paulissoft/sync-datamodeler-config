@@ -3,8 +3,11 @@
 <properties>
    <comment>Ide Run Time Status Persistance</comment>
    <entry key="migrationStatus.lastDecision">false</entry>
-   <entry key="migrationStatus.lastSource"/>
-   <entry key="oracle.sqldeveloper.19.1.0.081.0319/ide.properties_dataCopyied">true</entry>
    <entry key="oracle.sqldeveloper.19.1.0.081.0319/DefaultWorkspace/_dataCopyied">true</entry>
+   <entry key="oracle.sqldeveloper.19.1.0.081.0319/ide.properties_dataCopyied">true</entry>
+   <entry key="migrationStatus.lastSource"/>
+   <entry key="oracle.sqldeveloper.18.4.0.339.0420/DefaultWorkspace/_dataCopyied">true</entry>
+   <entry key="oracle.sqldeveloper.18.4.0.339.0420/ide.properties_dataCopyied">true</entry>
    <entry key="oracle.sqldeveloper.19.1.0.081.0319/System.sys_dataCopyied">true</entry>
+   <entry key="oracle.sqldeveloper.18.4.0.339.0420/System.sys_dataCopyied">true</entry>
 </properties>

@@ -789,14 +789,6 @@
                   </second>
                </Item>
                <Item class="oracle.javatools.util.Pair">
-                  <first class="java.lang.String">SwitchActiveView</first>
-                  <second class="oracle.ide.keyboard.KeyStrokes">
-                     <data>
-                        <Item class="javax.swing.KeyStroke">control alt V</Item>
-                     </data>
-                  </second>
-               </Item>
-               <Item class="oracle.javatools.util.Pair">
                   <first class="java.lang.String">oracle.ide.thumbnail.showThumbnail</first>
                   <second class="oracle.ide.keyboard.KeyStrokes">
                      <data>
@@ -1545,6 +1537,14 @@
                   <second class="oracle.ide.keyboard.KeyStrokes">
                      <data>
                         <Item class="javax.swing.KeyStroke">shift control L</Item>
+                     </data>
+                  </second>
+               </Item>
+               <Item class="oracle.javatools.util.Pair">
+                  <first class="java.lang.String">SwitchActiveView</first>
+                  <second class="oracle.ide.keyboard.KeyStrokes">
+                     <data>
+                        <Item class="javax.swing.KeyStroke">control alt V</Item>
                      </data>
                   </second>
                </Item>

@@ -142,6 +142,38 @@ ddlStatementsList.add(new java.lang.String(ddl));]]>
 			<![CDATA[]]>
 		</script>
 	</scr>
+	<scr id="D36CE536-D575-BE5C-625F-23DE23913C6B" name="Complex rule - check comments demo" object="Table" engine="Oracle Nashorn" type="Warning" var="table" library="my first library" method="checkcomments" purpose="validation" >
+		<script>
+			<![CDATA[]]>
+		</script>
+	</scr>
+	<scr id="D72E63EC-9DA2-3537-F8C9-AE8ACEDC73D2" name="Length of Not Null Constraint name" object="Column" engine="Oracle Nashorn" type="Error" var="column" library="my first library" method="NotNullConstr_Name_Length" purpose="validation" >
+		<script>
+			<![CDATA[]]>
+		</script>
+	</scr>
+	<scr id="3F2B77AE-F97F-EF6D-4D6D-C9FE4CC78999" name="Optional FK with mandatory columns" object="Index/Constraint" engine="Oracle Nashorn" type="Warning" var="index" library="" method="" purpose="validation" >
+		<script>
+			<![CDATA[var index;
+// define function - function parameter doesn't need to be named index
+function checkFKColumns(index){
+  //check it's foreign key index, otherwise FK is null
+ if(index.isFK()){
+ 	if(!index.getFKAssociation().isMandatory()){
+	 cols = index.getElements();
+	 for(var i=0;i<cols.length;i++){
+		if(cols[i].isMandatory()){
+			return false;
+		}
+	 }
+ 	}
+ }
+ return true;
+}
+// invoke the function
+checkFKColumns(index);]]>
+		</script>
+	</scr>
 	<scr id="0BAA564F-AB5F-D776-2E4F-31FDB3047F69" name="Tables to lower case - Rhino" object="relational" engine="Oracle Nashorn" type="" var="model" library="" method="" purpose="transformation" >
 		<script>
 			<![CDATA[tables = model.getTableSet().toArray();
@@ -170,55 +202,6 @@ for (var t = 0; t<tables.length;t++){
    }
  }
 }]]>
-		</script>
-	</scr>
-	<scr id="B673F271-4836-DD48-15AC-487DDECCAF49" name="Tables to upper case - JRuby" object="relational" engine="JSR 223 JRuby Engine" type="" var="model" library="" method="" purpose="transformation" >
-		<script>
-			<![CDATA[tables =$model.getTableSet().toArray()
-for t in 0..tables.length-1
- table = tables[t]
- name = table.getName().upcase
- table.setName(name)
- columns = table.getElements()
- size = table.getElementsCollection().size()-1
- for i in 0..size
-	column = columns[i]
-	cname = column.getName().upcase
-	column.setName(cname)
- end
- keys = table.getKeys()
- for i in 0..keys.length-1
-  key = keys[i]
-  kname = key.getName().upcase
-  key.setName(kname)
- end
-end]]>
-		</script>
-	</scr>
-	<scr id="3E7C4F9E-9FCB-56C7-086F-F976F9A66384" name="Tables to upper case - JRuby - library usage" object="relational" engine="JSR 223 JRuby Engine" type="" var="model" library="Jruby lib" method="tables_up" purpose="transformation" >
-		<script>
-			<![CDATA[def tables_up(model)
-tables = model.getTableSet().toArray()
-for t in 0..tables.length-1
- table = tables[t]
- name = table.getName().upcase
- table.setName(name)
- columns = table.getElements()
- size = table.getElementsCollection().size()-1
- for i in 0..size
-	column = columns[i]
-	cname = column.getName().upcase
-	column.setName(cname)
- end
- keys = table.getKeys()
- for i in 0..keys.length-1
-  key = keys[i]
-  kname = key.getName().upcase
-  key.setName(kname)
- end
-end
-return true
-end]]>
 		</script>
 	</scr>
 	<scr id="E60A5A28-BB9B-3787-10E7-259DF900B9E6" name="Table abbreviation to column" object="relational" engine="Oracle Nashorn" type="" var="model" library="" method="" purpose="transformation" >
@@ -550,37 +533,166 @@ if(template!=null){
 }]]>
 		</script>
 	</scr>
-
-	<scr id="D36CE536-D575-BE5C-625F-23DE23913C6B" name="Complex rule - check comments demo" object="Table" engine="Oracle Nashorn" type="Warning" var="table" library="my first library" method="checkcomments" purpose="validation" >
+	<scr id="85D9C042-5A6A-1028-2779-B892CCA6682F" name="Copy Comments in RDBMS to Comments - custom" object="relational" engine="Oracle Nashorn" type="" var="model" library="" method="" purpose="transformation" >
 		<script>
-			<![CDATA[]]>
-		</script>
-	</scr>
-	<scr id="D72E63EC-9DA2-3537-F8C9-AE8ACEDC73D2" name="Length of Not Null Constraint name" object="Column" engine="Oracle Nashorn" type="Error" var="column" library="my first library" method="NotNullConstr_Name_Length" purpose="validation" >
-		<script>
-			<![CDATA[]]>
-		</script>
-	</scr>
-	<scr id="3F2B77AE-F97F-EF6D-4D6D-C9FE4CC78999" name="Optional FK with mandatory columns" object="Index/Constraint" engine="Oracle Nashorn" type="Warning" var="index" library="" method="" purpose="validation" >
-		<script>
-			<![CDATA[var index;
-// define function - function parameter doesn't need to be named index
-function checkFKColumns(index){
-  //check it's foreign key index, otherwise FK is null
- if(index.isFK()){
- 	if(!index.getFKAssociation().isMandatory()){
-	 cols = index.getElements();
-	 for(var i=0;i<cols.length;i++){
-		if(cols[i].isMandatory()){
-			return false;
-		}
-	 }
- 	}
+			<![CDATA[max_length = 4000;
+function copyCommentsInRDBMS(object){
+ if(object.getComment().equals("")){
+   if(!object.getCommentInRDBMS().equals("")){
+     if(object.getCommentInRDBMS().length()>max_length){
+       object.setComment(object.getCommentInRDBMS().substring(0, max_length));
+     }else{
+       object.setComment(object.getCommentInRDBMS());
+     }
+     object.setDirty(true);
+   }
  }
- return true;
 }
-// invoke the function
-checkFKColumns(index);]]>
+
+tables = model.getTableSet().toArray();
+for (var t = 0; t<tables.length;t++){
+ table = tables[t]
+ copyCommentsInRDBMS(table);
+ columns = table.getElements();
+ size = table.getElementsCollection().size();
+ for (var i = 0; i < columns.length; i++) {
+	column = columns[i];
+	copyCommentsInRDBMS(column);
+ }
+ keys = table.getKeys();
+ for (var i = 0; i < keys.length; i++) {
+   key = keys[i];
+   if(!key.isFK()){
+     copyCommentsInRDBMS(key);
+   }else{
+     copyCommentsInRDBMS(key.getFKAssociation());
+   }
+ }
+}]]>
+		</script>
+	</scr>
+	<scr id="9C4F76F4-247F-9319-95F3-66B09FE19F8D" name="Copy Preferred Abbreviation to Short Name - custom" object="logical" engine="Oracle Nashorn" type="" var="model" library="" method="" purpose="transformation" >
+		<script>
+			<![CDATA[function copyPreferredAbbreviation(object) {
+	if (object.getShortName().equals("")) { 
+   		var preferredAbbreviation = object.getPreferredAbbreviation();
+   		if (!preferredAbbreviation.equals("")) {
+     		object.setShortName(preferredAbbreviation);
+     		object.setDirty(true);
+   		}
+ 	}
+}
+
+entities = model.getEntitySet().toArray();
+for (var e = 0; e < entities.length; e++) {
+ 	copyPreferredAbbreviation(entities[e]);
+}]]>
+		</script>
+	</scr>
+	<scr id="F81256DC-56E9-5D3C-A0CF-8C4A9A1CDED9" name="Set Relation Name - custom" object="logical" engine="Oracle Nashorn" type="" var="model" library="" method="" purpose="transformation" >
+		<script>
+			<![CDATA[function setRelationName(object, name) {
+	if (!object.getName().equals(name)) { 
+   		object.setName(name);
+     	object.setDirty(true);
+ 	}
+}
+
+relations = model.getRelationSet().toArray();
+for (var r = 0; r < relations.length; r++) {
+ 	setRelationName(relations[r], relations[r].getSourceEntity().getPreferredAbbreviation() + '_' + relations[r].getTargetEntity().getPreferredAbbreviation());
+}]]>
+		</script>
+	</scr>
+	<scr id="4B3FBC7A-6F86-E08F-1DCF-D71409293AE5" name="Table names plural - custom" object="relational" engine="Oracle Nashorn" type="" var="model" library="" method="" purpose="transformation" >
+		<script>
+			<![CDATA[var tables = model.getTableSet().toArray();
+for (var t = 0; t<tables.length; t++){
+	var table = tables[t];
+	var tableName = table.getName();
+ 	if (tableName.endsWith("Y")) {
+ 		// Y -> IES
+ 		table.setName(tableName.slice(0, -1) + "IES");
+ 		table.setDirty(true);
+ 	} else if (!tableName.endsWith("S")) {
+ 		// . -> .S
+ 		table.setName(tableName + "S");
+ 		table.setDirty(true);
+ 	}
+}]]>
+		</script>
+	</scr>
+	<scr id="BF0B89D7-DB6A-7A1F-DC74-3408C76E76FE" name="Set security options - custom" object="relational" engine="Oracle Nashorn" type="" var="model" library="" method="" purpose="transformation" >
+		<script>
+			<![CDATA[tables = model.getTableSet().toArray();
+for (var t = 0; t<tables.length;t++){
+	table = tables[t];
+	cols = table.getElements();
+	for(var c = 0; c < cols.length; c++){
+		if (cols[c].isContainsPII() != true) {
+			cols[c].setContainsPII(false);
+		}
+		if (cols[c].isContainsSensitiveInformation() != true) {
+			cols[c].setContainsSensitiveInformation(false);
+		}
+	}
+	table.setDirty(true);
+}]]>
+		</script>
+	</scr>
+	<scr id="741D502E-EEBF-6BE2-DEDB-8289F26A0B34" name="Set Use Domain Constraints - custom" object="relational" engine="Oracle Nashorn" type="" var="model" library="" method="" purpose="transformation" >
+		<script>
+			<![CDATA[tables = model.getTableSet().toArray();
+for (var t = 0; t<tables.length;t++){
+	table = tables[t];
+	cols = table.getElements();
+	for(var c = 0; c < cols.length; c++){
+		if (cols[c].getDomain() != null && 
+		    cols[c].getDomain().getName() != "Unknown" && 
+		    cols[c].getUseDomainConstraints() != true) {
+			cols[c].setUseDomainConstraints(true);
+			table.setDirty(true);
+		}
+	}
+}]]>
+		</script>
+	</scr>
+	<scr id="5798982E-B81B-D846-2256-231511A3A2A8" name="Define IDENTITY clause for ID columns - custom" object="relational" engine="Oracle Nashorn" type="" var="model" library="" method="" purpose="transformation" >
+		<script>
+			<![CDATA[// Set ID columns to IDENTITY clause
+
+// Get a handle on the application so we can output to the log window
+// var ApplicationView = Java.type('oracle.dbtools.crest.swingui.ApplicationView');
+
+var tables = model.getTableSet().toArray();
+for (var t = 0; t < tables.length; t++) {
+	table = tables[t];
+	cols = table.getElements();
+	for (var c = 0; c < cols.length; c++) {
+		if (cols[c].getName().equals("ID")) {
+			cols[c].setAutoIncrementColumn(true);
+			cols[c].setIdentityColumn(true);
+			cols[c].setAutoIncrementGenerateTrigger(false);
+			cols[c].setDirty(true);
+			// ApplicationView.log("Changed auto increment properties for column " + table.getName() + "." + cols[c].getName());
+		}
+	}
+}
+
+var clause = "IDENTITY_CLAUSE"; // thank you SQL Data Modeler, &$^é*"é*^"$^é&ùù!
+var tables = model.getStorageDesign().getTableProxySet().toArray();
+for (var t = 0; t < tables.length; t++) {
+	var table = tables[t];
+
+	var cols = table.getColumns().toArray();
+	for (var c = 0; c < cols.length; c++) {
+		if (cols[c].getName().equals("ID")) {
+			cols[c].setAutoIncrementDDL(clause);
+			cols[c].setDirty(true);
+			// ApplicationView.log("Changed auto increment properties for column proxy " + table.getName() + "." + cols[c].getName());
+		}
+	}
+}]]>
 		</script>
 	</scr>
 
@@ -657,13 +769,13 @@ end]]>
 	</lib>
 
 
-	<ddl_transformation_script_set id="B4E65BCB-CFF5-1302-E0BC-0C329BF9890E" name="Journal tables" description="" active="true">
+	<ddl_transformation_script_set id="B4E65BCB-CFF5-1302-E0BC-0C329BF9890E" name="Journal tables" description="" active="false">
 			<script id="9836D087-881D-2161-19AF-2C6DF49A964A"/>
 			<script id="1C0CDD35-A0D6-47E5-C702-7FB537C8A8C0"/>
 			<script id="B50F3C56-0DC4-6376-8CF9-9CB189DC97DD"/>
 			<script id="DC383793-5C2E-F62A-5241-35B8ACE86134"/>
 	</ddl_transformation_script_set>
-	<ddl_transformation_script_set id="86649BAE-547E-99D5-8B00-54B3BB9BB6BB" name="Empty script" description="" active="false">
+	<ddl_transformation_script_set id="86649BAE-547E-99D5-8B00-54B3BB9BB6BB" name="Empty script" description="" active="true">
 			<script id="0DC38187-8245-8904-7E00-D4B6DF394899"/>
 			<script id="27EEAD3F-3367-9D6F-8E02-D44189C855A1"/>
 			<script id="83D0D285-DF95-0BE7-EF4F-AC3F2D9CDE94"/>

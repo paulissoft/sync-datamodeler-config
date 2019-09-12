@@ -804,7 +804,118 @@
       </Value>
    </Item>
    <Item>
+      <Key>hide-unmapped-commands</Key>
+      <Value class="java.lang.Boolean">false</Value>
+   </Item>
+   <Item>
+      <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Incoming Changes.DisplaySettings_</Key>
+      <Value class="java.util.HashMap">
+         <Item>
+            <Key>columnPositions</Key>
+            <Value class="java.util.ArrayList"/>
+         </Item>
+         <Item>
+            <Key>columnWidths</Key>
+            <Value class="[I"/>
+         </Item>
+         <Item>
+            <Key>hiddenColumns</Key>
+            <Value class="[I"/>
+         </Item>
+         <Item>
+            <Key>sortAscending</Key>
+            <Value class="java.lang.Boolean">true</Value>
+         </Item>
+         <Item>
+            <Key>sortColumn</Key>
+            <Value class="java.lang.Integer">-1</Value>
+         </Item>
+         <Item>
+            <Key>sorted</Key>
+            <Value class="java.lang.Boolean">false</Value>
+         </Item>
+      </Value>
+   </Item>
+   <Item>
       <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Mode</Key>
-      <Value class="java.lang.String">Incoming Changes</Value>
+      <Value class="java.lang.String">Outgoing Changes</Value>
+   </Item>
+   <Item>
+      <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Outgoing Changes.DisplaySettings_</Key>
+      <Value class="java.util.HashMap">
+         <Item>
+            <Key>columnPositions</Key>
+            <Value class="java.util.ArrayList">
+               <Item class="java.lang.String">Name</Item>
+               <Item class="java.lang.String">Location</Item>
+            </Value>
+         </Item>
+         <Item>
+            <Key>columnWidths</Key>
+            <Value class="[I">
+               <Item>15</Item>
+               <Item>15</Item>
+            </Value>
+         </Item>
+         <Item>
+            <Key>hiddenColumns</Key>
+            <Value class="[I"/>
+         </Item>
+         <Item>
+            <Key>sortAscending</Key>
+            <Value class="java.lang.Boolean">true</Value>
+         </Item>
+         <Item>
+            <Key>sortColumn</Key>
+            <Value class="java.lang.Integer">0</Value>
+         </Item>
+         <Item>
+            <Key>sorted</Key>
+            <Value class="java.lang.Boolean">true</Value>
+         </Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Scope</Key>
+      <Value class="java.lang.String">ACTIVE_APPLICATION</Value>
+   </Item>
+   <Item>
+      <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Unversioned Files.DisplaySettings_</Key>
+      <Value class="java.util.HashMap">
+         <Item>
+            <Key>columnPositions</Key>
+            <Value class="java.util.ArrayList">
+               <Item class="java.lang.String">Name</Item>
+               <Item class="java.lang.String">Location</Item>
+            </Value>
+         </Item>
+         <Item>
+            <Key>columnWidths</Key>
+            <Value class="[I">
+               <Item>15</Item>
+               <Item>15</Item>
+            </Value>
+         </Item>
+         <Item>
+            <Key>hiddenColumns</Key>
+            <Value class="[I"/>
+         </Item>
+         <Item>
+            <Key>sortAscending</Key>
+            <Value class="java.lang.Boolean">true</Value>
+         </Item>
+         <Item>
+            <Key>sortColumn</Key>
+            <Value class="java.lang.Integer">0</Value>
+         </Item>
+         <Item>
+            <Key>sorted</Key>
+            <Value class="java.lang.Boolean">true</Value>
+         </Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>oracle.jdevimpl.vcs.svn.op.SVNOperationCheckout.lastCoRoot</Key>
+      <Value class="java.lang.String">C:\Users\gjpau\Documents\GitHub</Value>
    </Item>
 </dt-cache>

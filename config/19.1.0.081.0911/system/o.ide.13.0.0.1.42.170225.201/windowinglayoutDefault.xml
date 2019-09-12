@@ -1,39 +1,14 @@
 <LayoutInfo>
    <clientLayoutData>
+      <global>
+         <view-data ID="ExplorerWindow.SingletonExplorerWindow" ExplorerWindow.SingletonExplorerWindow.placeholder="foo"/>
+         <view-data ClosedByUser="false" ID="LogWindow.Log"/>
+      </global>
       <Editing layout-name="Editing">
          <view-data USE_LARGE_ICONS="true" pageSelection="" ID="PALETTEFACTORY.PALETTE"/>
       </Editing>
-      <global>
-         <view-data ClosedByUser="false" ID="LogWindow.Log"/>
-      </global>
    </clientLayoutData>
-   <knownDockableFactories>
-      <Debugger/>
-      <OWA_OUTPUT_DOCKABLE_VIEW_TYPE/>
-      <PALETTEFACTORY/>
-      <InspectorWindow/>
-      <EXTDockable/>
-      <Systemoracle_ideimpl_editor_RecentFiles_VIEW_TYPE/>
-      <DBMS_OUTPUT_DOCKABLE_VIEW_TYPE/>
-      <oracle-jdeveloper-subversion-PendingChangesWindow/>
-      <OUTLINE_VIEW_TYPE/>
-      <SEARCH_VIEW_TYPE/>
-      <BOOKMARKS_VIEW_TYPE/>
-      <DatabaseNavigatorWindow/>
-      <RECENT_OBJECTS_VIEW_TYPE/>
-      <VersioningNavigatorWindow/>
-      <RunManagerWindow/>
-      <Applicationoracle_ideimpl_editor_RecentFiles_VIEW_TYPE/>
-      <SshNavigatorWindow/>
-      <ExplorerWindow/>
-      <SQLHISTORY_VIEW_TYPE/>
-      <TestNavWindow/>
-      <LogWindow/>
-      <UnifiedThumbnailDockable/>
-      <VHVPropertiesDockable/>
-      <ViewType_SVNProperties/>
-      <ComponentPalette/>
-   </knownDockableFactories>
+   <knownDockableFactories/>
    <knowTriggeredLayouts>
       <Editing/>
    </knowTriggeredLayouts>
