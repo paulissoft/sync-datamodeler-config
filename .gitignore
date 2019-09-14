@@ -6,6 +6,7 @@
 !.gitignore
 !*.xml
 !*.pl
+!*.pm
 !*.md
 # includes client paths
 # product-preferences.xml

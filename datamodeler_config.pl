@@ -84,14 +84,15 @@ First version.
 
 =cut
 
-use 5.026; # Strawberry perl: 5.30.0
+use 5.008; # Perl 5.8 should be OK
 
 use autodie; # automatically die when a system call gives an error (for example open)
 use strict;
 use warnings;
 
-use File::Copy::Recursive qw(dircopy);
 use File::Basename;
+use lib &dirname($0); # to find File::Copy::Recursive in this directory
+use File::Copy::Recursive qw(dircopy);
 use File::Find;
 use File::Spec;
 use Getopt::Long;
