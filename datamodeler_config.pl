@@ -86,7 +86,7 @@ First version.
 
 use 5.008; # Perl 5.8 should be OK
 
-use autodie; # automatically die when a system call gives an error (for example open)
+# use autodie; # automatically die when a system call gives an error (for example open)
 use strict;
 use warnings;
 
@@ -216,7 +216,7 @@ sub get_version ($)
     my $datamodeler_home = $_[0];    
     my $file = File::Spec->catfile($datamodeler_home, 'datamodeler', 'bin', 'version.properties');
 
-    open(my $fh, '<', $file);
+    open(my $fh, '<', $file) || die "Can not open $file: $!";
 
     my %hash;
     
@@ -230,7 +230,7 @@ sub get_version ($)
             if (defined($key));
     }
 
-    close $fh;
+    close $fh || die "Can not close $file: $!";
 
     return $hash{VER_FULL};
 }
