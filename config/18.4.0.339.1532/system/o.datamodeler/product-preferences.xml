@@ -549,7 +549,7 @@
    </hash>
    <hash n="OSDDM_ModelingPP">
       <value n="def_import_path" v=""/>
-      <value n="def_proj_path" v="C:\Users\gjpau\Documents\GitHub\bonus\datamodel"/>
+      <value n="def_proj_path" v="U:\Documents\GitHub\bonus\datamodel"/>
       <value n="def_save_path" v=""/>
       <value n="def_sys_types_path" v=""/>
       <value n="reload_last_state" v="false"/>
