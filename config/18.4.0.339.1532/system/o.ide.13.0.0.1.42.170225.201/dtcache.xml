@@ -838,7 +838,7 @@
    </Item>
    <Item>
       <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Mode</Key>
-      <Value class="java.lang.String">Outgoing Changes</Value>
+      <Value class="java.lang.String">Incoming Changes</Value>
    </Item>
    <Item>
       <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Outgoing Changes.DisplaySettings_</Key>
