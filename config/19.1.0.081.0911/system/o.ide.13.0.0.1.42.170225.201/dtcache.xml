@@ -1,6 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <dt-cache class="java.util.HashMap" xmlns="http://xmlns.oracle.com/jdeveloper/110000/dt-cache">
    <Item>
+      <Key>QuickDiff.Reference</Key>
+      <Value class="java.lang.String">FileOnDisk</Value>
+   </Item>
+   <Item>
       <Key>SyntaxSchemes</Key>
       <Value class="oracle.ide.ceditor.options.SyntaxSchemes">
          <schemeMap>
@@ -804,10 +808,6 @@
       </Value>
    </Item>
    <Item>
-      <Key>hide-unmapped-commands</Key>
-      <Value class="java.lang.Boolean">false</Value>
-   </Item>
-   <Item>
       <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Incoming Changes.DisplaySettings_</Key>
       <Value class="java.util.HashMap">
          <Item>
@@ -838,7 +838,7 @@
    </Item>
    <Item>
       <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Mode</Key>
-      <Value class="java.lang.String">Outgoing Changes</Value>
+      <Value class="java.lang.String">Incoming Changes</Value>
    </Item>
    <Item>
       <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Outgoing Changes.DisplaySettings_</Key>
@@ -853,8 +853,8 @@
          <Item>
             <Key>columnWidths</Key>
             <Value class="[I">
-               <Item>15</Item>
-               <Item>15</Item>
+               <Item>75</Item>
+               <Item>75</Item>
             </Value>
          </Item>
          <Item>
@@ -915,7 +915,138 @@
       </Value>
    </Item>
    <Item>
+      <Key>oracle.jdeveloper.subversion.changeListCommentsVisible</Key>
+      <Value class="java.lang.Boolean">false</Value>
+   </Item>
+   <Item>
+      <Key>oracle.jdeveloper.subversion.oracle.jdevimpl.vcs.svn.changelist.OUTGOING.optionsVisible</Key>
+      <Value class="java.lang.Boolean">false</Value>
+   </Item>
+   <Item>
+      <Key>oracle.jdevimpl.vcs.generic.changelist.StatusBasedChangeListWindow.Mode</Key>
+      <Value class="java.lang.String">oracle.jdevimpl.vcs.svn.changelist.CANDIDATES</Value>
+   </Item>
+   <Item>
+      <Key>oracle.jdevimpl.vcs.generic.changelist.StatusBasedChangeListWindow.Scope</Key>
+      <Value class="java.lang.String">ACTIVE_APPLICATION</Value>
+   </Item>
+   <Item>
+      <Key>oracle.jdevimpl.vcs.generic.changelist.StatusBasedChangeListWindow.oracle.jdevimpl.vcs.svn.changelist.CANDIDATES.DisplaySettings_</Key>
+      <Value class="java.util.HashMap">
+         <Item>
+            <Key>columnPositions</Key>
+            <Value class="java.util.ArrayList">
+               <Item class="java.lang.String">Name</Item>
+               <Item class="java.lang.String">Location</Item>
+               <Item class="java.lang.String">Status</Item>
+            </Value>
+         </Item>
+         <Item>
+            <Key>columnWidths</Key>
+            <Value class="[I">
+               <Item>15</Item>
+               <Item>15</Item>
+               <Item>15</Item>
+            </Value>
+         </Item>
+         <Item>
+            <Key>hiddenColumns</Key>
+            <Value class="[I"/>
+         </Item>
+         <Item>
+            <Key>sortAscending</Key>
+            <Value class="java.lang.Boolean">true</Value>
+         </Item>
+         <Item>
+            <Key>sortColumn</Key>
+            <Value idref="0"/>
+         </Item>
+         <Item>
+            <Key>sorted</Key>
+            <Value class="java.lang.Boolean">true</Value>
+         </Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>oracle.jdevimpl.vcs.generic.changelist.StatusBasedChangeListWindow.oracle.jdevimpl.vcs.svn.changelist.INCOMING.DisplaySettings_</Key>
+      <Value class="java.util.HashMap">
+         <Item>
+            <Key>columnPositions</Key>
+            <Value class="java.util.ArrayList">
+               <Item class="java.lang.String">Name</Item>
+               <Item class="java.lang.String">Location</Item>
+               <Item class="java.lang.String">Remote Status</Item>
+               <Item class="java.lang.String">Remote Property</Item>
+            </Value>
+         </Item>
+         <Item>
+            <Key>columnWidths</Key>
+            <Value class="[I">
+               <Item>15</Item>
+               <Item>15</Item>
+               <Item>15</Item>
+               <Item>15</Item>
+            </Value>
+         </Item>
+         <Item>
+            <Key>hiddenColumns</Key>
+            <Value class="[I"/>
+         </Item>
+         <Item>
+            <Key>sortAscending</Key>
+            <Value class="java.lang.Boolean">true</Value>
+         </Item>
+         <Item>
+            <Key>sortColumn</Key>
+            <Value idref="0"/>
+         </Item>
+         <Item>
+            <Key>sorted</Key>
+            <Value class="java.lang.Boolean">true</Value>
+         </Item>
+      </Value>
+   </Item>
+   <Item>
+      <Key>oracle.jdevimpl.vcs.generic.changelist.StatusBasedChangeListWindow.oracle.jdevimpl.vcs.svn.changelist.OUTGOING.DisplaySettings_</Key>
+      <Value class="java.util.HashMap">
+         <Item>
+            <Key>columnPositions</Key>
+            <Value class="java.util.ArrayList">
+               <Item class="java.lang.String">Name</Item>
+               <Item class="java.lang.String">Location</Item>
+               <Item class="java.lang.String">Content Status</Item>
+               <Item class="java.lang.String">Property Status</Item>
+            </Value>
+         </Item>
+         <Item>
+            <Key>columnWidths</Key>
+            <Value class="[I">
+               <Item>15</Item>
+               <Item>15</Item>
+               <Item>15</Item>
+               <Item>15</Item>
+            </Value>
+         </Item>
+         <Item>
+            <Key>hiddenColumns</Key>
+            <Value class="[I"/>
+         </Item>
+         <Item>
+            <Key>sortAscending</Key>
+            <Value class="java.lang.Boolean">true</Value>
+         </Item>
+         <Item>
+            <Key>sortColumn</Key>
+            <Value idref="0"/>
+         </Item>
+         <Item>
+            <Key>sorted</Key>
+            <Value class="java.lang.Boolean">true</Value>
+         </Item>
+      </Value>
+   </Item>
+   <Item>
       <Key>oracle.jdevimpl.vcs.svn.op.SVNOperationCheckout.lastCoRoot</Key>
-      <Value class="java.lang.String">C:\Users\gjpau\Documents\GitHub</Value>
+      <Value class="java.lang.String">C:\Users\allshare.gjp\Documents\Oracle SQL Developer Data Modeler\mywork</Value>
    </Item>
 </dt-cache>

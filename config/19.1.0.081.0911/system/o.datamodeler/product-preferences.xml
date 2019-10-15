@@ -1,6 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <ide:preferences xmlns:ide="http://xmlns.oracle.com/ide/hash">
-   <value n="db.system.id" v="f116359c-ffca-4f74-ab63-f96c5036b4a7"/>
+   <value n="db.system.id" v="563e9a44-06a9-441c-8f65-989c91070f99"/>
    <hash n="DBConfig">
       <hash n="EXTENSION"/>
       <list n="TPDRIVER"/>
@@ -12,44 +12,20 @@
             <url path="../../../../../"/>
          </list>
          <list n="dataModeler_DDL">
-            <url path="../../../../../Documents/GitHub/bonus/ddl/bonus.ddl"/>
-            <url path="../../../../../Documents/GitHub/bonus/ddl/ddl.xml"/>
+            <url protocol="file" path="/U:/Documents/GitHub/bonus/ddl/ddl.xml"/>
          </list>
          <list n="dataModeler_Domains">
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/domains.xml"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/domains"/>
-         </list>
-         <list n="dataModeler_Glossary">
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/bonus.glossary"/>
+            <url path="/U:/Documents/GitHub/bonus/datamodel/domains.xml"/>
          </list>
          <list n="dataModeler_OpenDesign">
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/TAB.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/ERD.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/ERD COLLABORATOR.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/ERD OBJECTIVE RESULT.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/ERD ADMINISTRATOR.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/TAB OBJECTIVE RESULT.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/TAB COLLABORATOR.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/TAB ADMINISTRATOR.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/bonus.dmd"/>
-            <url path="../../../../../Documents/GitHub/bonus.new/datamodel/TAB OBJECTIVE RESULT.pdf"/>
-         </list>
-         <list n="dataModeler_Reports">
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/report/"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/"/>
-         </list>
-         <list n="dataModeler_SaveDesign">
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/bonus.dmd"/>
-            <url path="../../../../../bonus.dmd"/>
+            <url protocol="file" path="/U:/Documents/GitHub/bonus/datamodel/bonus.dmd"/>
+            <url protocol="file" path="/U:/Documents/GitHub/bonus/datamodel/"/>
+            <url protocol="file" path="/U:/"/>
+            <url path="/U:/Documents/GitHub/bonus/datamodel/"/>
          </list>
          <list n="DEFAULT_CONTEXT">
-            <url path="../../../../../"/>
-            <url path="../../../../../Documents/GitHub/bonus/ddl/"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/"/>
+            <url path="/U:/Documents/GitHub/bonus/datamodel/"/>
             <url protocol="file" path="/"/>
-         </list>
-         <list n="DIFFDIR">
-            <url path="../../../../../"/>
          </list>
       </hash>
    </hash>
@@ -62,64 +38,19 @@
          <string v="Debugger.ThreadsWindow"/>
       </list>
    </hash>
-   <hash n="environment-options">
-      <url n="logFilePrefix" path="../../../../../Documents/GitHub/bonus/datamodel/log/"/>
-      <value n="saveLogToFile" v="true"/>
-   </hash>
    <hash n="HelpOptions">
-      <value n="helpCenterHeight" v="1056"/>
+      <value n="helpCenterHeight" v="1048"/>
       <value n="helpCenterWidth" v="500"/>
       <value n="helpCenterWindowOpen" v="false"/>
       <list n="openHelpDocuments">
-         <url path="../../../../../../../usr/local/datamodeler/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-69B12E47-6075-4471-A205-BBB04113EE24.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-69B12E47-6075-4471-A205-BBB04113EE24.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-69B12E47-6075-4471-A205-BBB04113EE24.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
-         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
+         <url path="../../../../../../../Program Files/Oracle/datamodeler/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
       </list>
-      <value n="splitterPosition" v="266"/>
+      <value n="splitterPosition" v="171"/>
    </hash>
    <hash n="MRUConnectionCache">
       <hash n="Connections">
          <list n="MostRecentlyUsed">
-            <string v="IdeConnections%23prxy%5Bbonus_data%5D%40localhost"/>
+            <string v="IdeConnections%23bonus_data%40compose"/>
          </list>
       </hash>
    </hash>
@@ -146,16 +77,9 @@
       <value n="track-usages" v="false"/>
    </hash>
    <hash n="oracle.ideimpl.webupdate.CheckForUpdatesPreferences">
-      <value n="instanceGuid" v="bd2ccce1-016b-1000-8001-0aff03271bc0"/>
-      <value n="lastError" v="download.oracle.com"/>
+      <value n="instanceGuid" v="bce3c630-016b-1000-8001-c0a8f82c53f4"/>
       <value n="lastErrorType" v="none"/>
       <hash n="pingedVersions">
-         <list n="18.4.0.339.1532">
-            <string v="http://download.oracle.com/otn-pub/jdeveloper/cfu/master3.xml"/>
-            <string v="https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/156082.xml"/>
-            <string v="http://www.oracle.com/webfolder/technetwork/jdeveloper/downloads/1213center.xml"/>
-            <string v="https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/130355.xml"/>
-         </list>
          <list n="19.1.0.081.0911">
             <string v="http://download.oracle.com/otn-pub/jdeveloper/cfu/master3.xml"/>
             <string v="https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/156082.xml"/>
@@ -165,17 +89,9 @@
       </hash>
       <hash n="previousUpdates"/>
    </hash>
-   <hash n="oracle.jdeveloper.vcs.spi.VCSCommentTemplatesPrefs@oracle.jdeveloper.subversion">
-      <value n="defaultTemplateIndex" v="-1"/>
-      <list n="templates"/>
-   </hash>
-   <hash n="oracle.jdevimpl.compare.CompareOptions">
-      <value n="showCharDifferences" v="true"/>
-   </hash>
    <hash n="oracle.jdevimpl.vcs.svn.prefs.SVNEnvironmentPrefs">
-      <value n="autoAddFiles" v="true"/>
-      <value n="useLabelDecorations" v="true"/>
-      <value n="useOverlays" v="true"/>
+      <value n="useLabelDecorations" v="false"/>
+      <value n="useOverlays" v="false"/>
    </hash>
    <hash n="OracleHomeSettings">
       <hash n="HomeRoot">
@@ -183,16 +99,7 @@
       </hash>
    </hash>
    <hash n="OSDDM_CustomSettings">
-      <hash n="custom_settings">
-         <hash n="oracle.dbtools.crest.swingui.compare.xmlmeta.XMLMetadataComparator">
-            <value n="h" v="600"/>
-            <value n="hpos" v="519"/>
-            <value n="vpos" v="203"/>
-            <value n="w" v="1100"/>
-            <value n="x" v="220"/>
-            <value n="y" v="215"/>
-         </hash>
-      </hash>
+      <hash n="custom_settings"/>
    </hash>
    <hash n="OSDDM_DBMConnections">
       <hash n="dbmconnections"/>
@@ -205,121 +112,38 @@
       <value n="generate_comments_in_rdbms" v="true"/>
       <value n="generate_inline_column_cc" v="false"/>
       <value n="generate_valid_value_cc" v="true"/>
-      <value n="include_bufferpool_in_ddl" v="true"/>
       <value n="include_default_settings_in_ddl" v="false"/>
-      <value n="include_encryption_in_ddl" v="false"/>
-      <value n="include_freelistgroups_in_ddl" v="true"/>
-      <value n="include_freelists_in_ddl" v="true"/>
-      <value n="include_initialextent_in_ddl" v="true"/>
-      <value n="include_initrans_in_ddl" v="true"/>
       <value n="include_logging_in_ddl" v="true"/>
-      <value n="include_maxextents_in_ddl" v="true"/>
-      <value n="include_minextents_in_ddl" v="true"/>
-      <value n="include_nextextent_in_ddl" v="true"/>
-      <value n="include_optimal_in_ddl" v="true"/>
-      <value n="include_pctfree_in_ddl" v="true"/>
-      <value n="include_pctincrease_in_ddl" v="true"/>
-      <value n="include_pctused_in_ddl" v="true"/>
-      <value n="include_physical_properties_in_compare" v="false"/>
       <value n="include_prompt" v="false"/>
       <value n="include_redaction_in_ddl" v="false"/>
       <value n="include_schema_in_ddl" v="false"/>
       <value n="include_storage_in_ddl" v="true"/>
-      <value n="include_storage_properties_in_compare" v="false"/>
-      <value n="include_system_names_in_compare" v="true"/>
       <value n="include_tablespace_in_ddl" v="true"/>
       <value n="include_tsdp_in_ddl" v="false"/>
       <value n="not_null_short_form_generation" v="false"/>
       <value n="replace_system_names_during_import" v="true"/>
       <value n="show_char_byte_in_ddl" v="true"/>
       <value n="type_subst_triggers" v="true"/>
-      <value n="use_case_sensitive_names_in_compare" v="false"/>
-      <value n="use_columns_order_property_in_compare" v="false"/>
-      <value n="use_data_type_kind_in_compare" v="false"/>
       <value n="use_quoted_identifiers" v="false"/>
-      <value n="use_schema_property_in_compare" v="true"/>
       <value n="use_sql_dev_formatting" v="true"/>
-   </hash>
-   <hash n="OSDDM_DiagramLogicalModelPP">
-      <value n="box_in_box" v="true"/>
-      <value n="notation" v="1"/>
-   </hash>
-   <hash n="OSDDM_DiagramRelationalModelPP">
-      <value n="fk2pkArrow" v="true"/>
    </hash>
    <hash n="OSDDM_DialogSettings">
       <hash n="dialogs_settings">
-         <hash n="oracle.dbtools.crest.swingui.admin.DesignLevelSettingsPropertiesDialog">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="560.0"/>
-            <value n="treepath" v="/Settings/Naming Standard/Templates"/>
-            <value n="w" v="670.0"/>
-            <value n="x" v="625.0"/>
-            <value n="y" v="235.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.admin.masktemplates.MaskTemplatesAdmin">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="500.0"/>
-            <value n="treepath" v=""/>
-            <value n="w" v="840.0"/>
-            <value n="x" v="540.0"/>
-            <value n="y" v="265.0"/>
-         </hash>
          <hash n="oracle.dbtools.crest.swingui.compare.CompareModelsDialog">
             <value n="dividerLocation" v="350"/>
-            <value n="h" v="740.0"/>
+            <value n="h" v="838.0"/>
             <value n="treepath" v=""/>
-            <value n="w" v="905.0"/>
-            <value n="x" v="594.0"/>
-            <value n="y" v="82.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.designrules.DDLTransformationsScriptsDialog">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="716.0"/>
-            <value n="treepath" v=""/>
-            <value n="w" v="1042.0"/>
-            <value n="x" v="710.0"/>
-            <value n="y" v="227.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.designrules.DesignRuleView">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="867.0"/>
-            <value n="treepath" v=""/>
-            <value n="w" v="1123.0"/>
-            <value n="x" v="560.0"/>
-            <value n="y" v="115.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.datatypes.CollectionTypePropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="460.0"/>
-            <value n="treepath" v="/General"/>
-            <value n="w" v="730.0"/>
-            <value n="x" v="595.0"/>
-            <value n="y" v="285.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.datatypes.DataTypesModelPropertiesDialog">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="400.0"/>
-            <value n="treepath" v="/General"/>
-            <value n="w" v="650.0"/>
-            <value n="x" v="635.0"/>
-            <value n="y" v="315.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.datatypes.DistinctTypePropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="460.0"/>
-            <value n="treepath" v="/General"/>
-            <value n="w" v="650.0"/>
-            <value n="x" v="635.0"/>
-            <value n="y" v="285.0"/>
+            <value n="w" v="1069.0"/>
+            <value n="x" v="426.0"/>
+            <value n="y" v="103.0"/>
          </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.DesignPropertiesDialog">
             <value n="dividerLocation" v="0"/>
             <value n="h" v="550.0"/>
-            <value n="treepath" v="/Settings/Naming Standard/Templates"/>
+            <value n="treepath" v="/Settings/Dynamic Properties"/>
             <value n="w" v="650.0"/>
             <value n="x" v="635.0"/>
-            <value n="y" v="240.0"/>
+            <value n="y" v="245.0"/>
          </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.DomainPropertiesDialogEx">
             <value n="dividerLocation" v="0"/>
@@ -329,221 +153,85 @@
             <value n="x" v="635.0"/>
             <value n="y" v="210.0"/>
          </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.logical.ArcPropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="460.0"/>
-            <value n="treepath" v="/General"/>
-            <value n="w" v="650.0"/>
-            <value n="x" v="635.0"/>
-            <value n="y" v="285.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.logical.AttributePropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="600.0"/>
-            <value n="treepath" v="/Default and Constraint"/>
-            <value n="w" v="780.0"/>
-            <value n="x" v="570.0"/>
-            <value n="y" v="215.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.logical.EntityPropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="560.0"/>
-            <value n="treepath" v="/Attributes"/>
-            <value n="w" v="880.0"/>
-            <value n="x" v="1024.0"/>
-            <value n="y" v="367.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.logical.EntityViewPropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="814.0"/>
-            <value n="treepath" v="/Query"/>
-            <value n="w" v="1548.0"/>
-            <value n="x" v="299.0"/>
-            <value n="y" v="150.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.logical.InheritanceRelationPropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="460.0"/>
-            <value n="treepath" v="/Summary"/>
-            <value n="w" v="650.0"/>
-            <value n="x" v="504.0"/>
-            <value n="y" v="296.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.logical.KeyPropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="460.0"/>
-            <value n="treepath" v="/Attributes and Relations"/>
-            <value n="w" v="650.0"/>
-            <value n="x" v="653.0"/>
-            <value n="y" v="518.0"/>
-         </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.logical.LogicalModelDialogEx">
             <value n="dividerLocation" v="0"/>
             <value n="h" v="400.0"/>
-            <value n="treepath" v="/Naming Options"/>
+            <value n="treepath" v="/Naming Options/View"/>
             <value n="w" v="960.0"/>
             <value n="x" v="480.0"/>
-            <value n="y" v="315.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.logical.RelationPropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="520.0"/>
-            <value n="treepath" v="/General"/>
-            <value n="w" v="880.0"/>
-            <value n="x" v="1010.0"/>
-            <value n="y" v="468.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.ModelPropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="400.0"/>
-            <value n="treepath" v="/General"/>
-            <value n="w" v="650.0"/>
-            <value n="x" v="635.0"/>
-            <value n="y" v="315.0"/>
+            <value n="y" v="320.0"/>
          </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.relational.ColumnPropertiesDialogEx">
             <value n="dividerLocation" v="0"/>
             <value n="h" v="660.0"/>
-            <value n="treepath" v="/Default and Constraint"/>
+            <value n="treepath" v="/Auto Increment"/>
             <value n="w" v="780.0"/>
             <value n="x" v="570.0"/>
             <value n="y" v="190.0"/>
          </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.relational.FKArcPropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="460.0"/>
-            <value n="treepath" v="/General"/>
-            <value n="w" v="650.0"/>
-            <value n="x" v="987.0"/>
-            <value n="y" v="226.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.relational.ForeignKeyPropertiesDialogEx">
-            <value n="dividerLocation" v="190"/>
-            <value n="h" v="550.0"/>
-            <value n="treepath" v="/General"/>
-            <value n="w" v="860.0"/>
-            <value n="x" v="530.0"/>
-            <value n="y" v="245.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.relational.IndexPropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="540.0"/>
-            <value n="treepath" v="/General"/>
-            <value n="w" v="770.0"/>
-            <value n="x" v="575.0"/>
-            <value n="y" v="245.0"/>
-         </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.relational.RelationalModelDialogEx">
             <value n="dividerLocation" v="0"/>
             <value n="h" v="400.0"/>
-            <value n="treepath" v="/General"/>
+            <value n="treepath" v="/Naming Options/Constraint"/>
             <value n="w" v="960.0"/>
             <value n="x" v="480.0"/>
-            <value n="y" v="315.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.relational.SchemaObjectPropertiesDialogEx">
-            <value n="dividerLocation" v="190"/>
-            <value n="h" v="600.0"/>
-            <value n="treepath" v="/Rest Services"/>
-            <value n="w" v="900.0"/>
-            <value n="x" v="510.0"/>
-            <value n="y" v="215.0"/>
+            <value n="y" v="320.0"/>
          </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.relational.TablePropertiesDialogEx">
             <value n="dividerLocation" v="170"/>
-            <value n="h" v="784.0"/>
-            <value n="treepath" v="/Table Level Constraints"/>
-            <value n="w" v="1061.0"/>
-            <value n="x" v="429.0"/>
-            <value n="y" v="128.0"/>
+            <value n="h" v="610.0"/>
+            <value n="treepath" v="/Unique Constraints"/>
+            <value n="w" v="920.0"/>
+            <value n="x" v="500.0"/>
+            <value n="y" v="215.0"/>
          </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.relational.TableViewPropertiesDialogEx">
+         <hash n="oracle.dbtools.crest.swingui.editor.storage.oracle.FunctionPropertyDialogOracle">
             <value n="dividerLocation" v="0"/>
-            <value n="h" v="667.0"/>
-            <value n="treepath" v="/Query"/>
-            <value n="w" v="1204.0"/>
-            <value n="x" v="358.0"/>
-            <value n="y" v="181.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.storage.oracle.v10g.UserPropertyDialogOraclev10g">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="522.0"/>
+            <value n="h" v="344.0"/>
             <value n="treepath" v=""/>
-            <value n="w" v="456.0"/>
-            <value n="x" v="732.0"/>
-            <value n="y" v="259.0"/>
+            <value n="w" v="458.0"/>
+            <value n="x" v="731.0"/>
+            <value n="y" v="348.0"/>
          </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.storage.oracle.v12c.ColumnPropertyDialogOraclev12c">
             <value n="dividerLocation" v="0"/>
-            <value n="h" v="660.0"/>
+            <value n="h" v="644.0"/>
             <value n="treepath" v=""/>
-            <value n="w" v="518.0"/>
-            <value n="x" v="701.0"/>
-            <value n="y" v="185.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.storage.oracle.v9i.MaterializedViewLogPropertyDialogOraclev9i">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="550.0"/>
-            <value n="treepath" v=""/>
-            <value n="w" v="740.0"/>
-            <value n="x" v="590.0"/>
-            <value n="y" v="245.0"/>
+            <value n="w" v="508.0"/>
+            <value n="x" v="706.0"/>
+            <value n="y" v="198.0"/>
          </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.storage.oracle.v9i.TriggerPropertyDialogOraclev9i">
             <value n="dividerLocation" v="0"/>
-            <value n="h" v="718.0"/>
+            <value n="h" v="480.0"/>
             <value n="treepath" v=""/>
-            <value n="w" v="806.0"/>
+            <value n="w" v="505.0"/>
             <value n="x" v="707.0"/>
-            <value n="y" v="275.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.viewbuilder.QueryBuilderPanel">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="894.0"/>
-            <value n="treepath" v=""/>
-            <value n="w" v="1457.0"/>
-            <value n="x" v="289.0"/>
-            <value n="y" v="68.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.editor.viewbuilder.tester.DMSQLQueryTester">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="600.0"/>
-            <value n="treepath" v=""/>
-            <value n="w" v="500.0"/>
-            <value n="x" v="710.0"/>
-            <value n="y" v="215.0"/>
-         </hash>
-         <hash n="oracle.dbtools.crest.swingui.wizards.reports.StandardReportsConfigurationDialog">
-            <value n="dividerLocation" v="0"/>
-            <value n="h" v="643.0"/>
-            <value n="treepath" v=""/>
-            <value n="w" v="702.0"/>
-            <value n="x" v="0.0"/>
-            <value n="y" v="0.0"/>
+            <value n="y" v="280.0"/>
          </hash>
       </hash>
    </hash>
    <hash n="OSDDM_GeneralPurpose">
       <value n="autoJoinOnFK" v="true"/>
-      <value n="def_ddl_files_path" v="C:\Users\gjpau\Documents\GitHub\bonus\ddl"/>
+      <value n="def_ddl_files_path" v=""/>
       <value n="incl_des_name_in_ddl_files_path" v="true"/>
       <value n="last_export_folder" v=""/>
-      <value n="last_open_design" v="C:\Users\gjpau\Documents\GitHub\bonus\datamodel\bonus.dmd"/>
-      <value n="last_open_dpv" v="108B157D-35A5-41BB-9EB4-EE1A7D3E69B1"/>
-      <value n="page_height" v="595.0"/>
-      <value n="page_margin_height" v="595.0"/>
-      <value n="page_margin_width" v="842.0"/>
+      <value n="last_open_design" v=""/>
+      <value n="last_open_dpv" v=""/>
+      <value n="page_height" v="842.0"/>
+      <value n="page_margin_height" v="842.0"/>
+      <value n="page_margin_width" v="595.0"/>
       <value n="page_margin_x" v="0.0"/>
       <value n="page_margin_y" v="0.0"/>
-      <value n="page_orientation" v="0"/>
-      <value n="page_width" v="842.0"/>
+      <value n="page_orientation" v="1"/>
+      <value n="page_width" v="595.0"/>
       <value n="paper_media_name" v="iso-a4"/>
       <value n="printer_name" v=""/>
       <value n="use_preferred_logical_types" v="false"/>
    </hash>
    <hash n="OSDDM_ModelingPP">
       <value n="def_import_path" v=""/>
-      <value n="def_proj_path" v="C:\Users\gjpau\Documents\GitHub\bonus\datamodel"/>
+      <value n="def_proj_path" v="U:\Documents\GitHub\bonus\datamodel"/>
       <value n="def_save_path" v=""/>
       <value n="def_sys_types_path" v=""/>
       <value n="reload_last_state" v="false"/>
@@ -551,161 +239,6 @@
       <value n="show_properties_dialog_on_new" v="true"/>
       <value n="show_select_rel_model_dialog" v="false"/>
       <value n="use_versioning_functionality" v="true"/>
-   </hash>
-   <hash n="OSDDM_ModelLogicalPP">
-      <value n="def_create_surrogate_key" v="false"/>
-      <value n="def_use_surrogate_key" v="false"/>
-      <value n="keep_fk_names_syncronized" v="true"/>
-      <value n="pk_identifying_relation" v="true"/>
-      <value n="propagate_pk_attr_notes" v="false"/>
-      <value n="source_optional" v="true"/>
-      <value n="target_optional" v="false"/>
-   </hash>
-   <hash n="OSDDM_ModelPhysicalOraclePP">
-      <value n="oracle_auto_inc_ddl" v="DEFAULT_CLAUSE"/>
-      <value n="oracle_identity_ddl" v="IDENTITY_CLAUSE"/>
-      <hash n="oracle_index_template">
-         <value n="oit_bitmap_index" v="false"/>
-         <value n="oit_compress" v="0"/>
-         <value n="oit_compute_stats" v="NO"/>
-         <value n="oit_degree" v=""/>
-         <value n="oit_logging" v="YES"/>
-         <value n="oit_online" v="NO"/>
-         <value n="oit_parallel" v="NO"/>
-         <value n="oit_partitioned" v="NON_PARTITIONED"/>
-         <value n="oit_segment" v=""/>
-         <value n="oit_sorted_rows" v="SORTED"/>
-         <value n="oit_tablespace" v=""/>
-      </hash>
-      <value n="oracle_sequence_name" v=""/>
-      <hash n="oracle_table_template">
-         <value n="ott_cache" v="NO"/>
-         <value n="ott_data_compression" v="NO"/>
-         <value n="ott_degree" v=""/>
-         <value n="ott_logging" v="YES"/>
-         <value n="ott_monitoring" v="NO"/>
-         <value n="ott_organization" v="HEAP"/>
-         <value n="ott_parallel" v="NO"/>
-         <value n="ott_partitioned" v="NO"/>
-         <value n="ott_preserve_rows" v="YES"/>
-         <value n="ott_reject_limit" v=""/>
-         <value n="ott_row_dependency" v="NO"/>
-         <value n="ott_row_movement" v="DISABLE"/>
-         <value n="ott_segment" v=""/>
-         <value n="ott_tableSpace" v=""/>
-         <value n="ott_temporary" v="NO"/>
-      </hash>
-      <value n="oracle_tablespace" v=""/>
-      <value n="oracle_trigger_name" v=""/>
-      <value n="oracle_user" v=""/>
-      <value n="use_oracle_index_template" v="false"/>
-      <value n="use_oracle_table_template" v="false"/>
-   </hash>
-   <hash n="OSDDM_ModelPP">
-      <value n="allow_similar_types_fk" v="true"/>
-      <value n="column_default_datatype" v="Domain"/>
-      <value n="default_rdbms_site" v="32076570-2523-435C-2E92-BF29817DFF70"/>
-      <value n="default_rdbms_type" v="9"/>
-      <value n="fk_column_on_new_fk_option" v="0"/>
-      <value n="nulls_allowed" v="true"/>
-      <hash n="preferred_domains"/>
-      <hash n="preferred_logical_types"/>
-   </hash>
-   <hash n="OSDDM_ModelRelationalPP">
-      <value n="allow_columns_reorder" v="false"/>
-      <value n="db_sync_whole_schema" v="true"/>
-      <value n="default_fk_rule" v="NO ACTION"/>
-      <value n="delete_fk_columns_strategy" v="2"/>
-      <value n="surrogate_key_domain" v="A91E623C-42F8-DEF2-275C-1034AFFCE133"/>
-      <value n="surrogate_key_ldt_precision" v=""/>
-      <value n="sync_remote_objects_on_load" v="false"/>
-      <value n="use_db_sync_src_connection" v="true"/>
-      <value n="use_db_sync_src_object" v="true"/>
-      <value n="use_db_sync_src_schema" v="true"/>
-   </hash>
-   <hash n="OSDDM_ModelSynchronizationPhysicalPP">
-      <value n="import_partitions" v="true"/>
-      <value n="import_secondary_tables" v="false"/>
-      <value n="import_spatial_properties" v="false"/>
-      <value n="import_triggers" v="true"/>
-      <value n="scan_for_used_structured_types" v="false"/>
-      <hash n="synchronization_types">
-         <hash n="1">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="CLUSTER"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="10">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="SYNONYM"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="11">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="TABLESPACE"/>
-            <value n="used" v="true"/>
-         </hash>
-         <hash n="12">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="TEMP TABLESPACE"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="13">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="UNDO TABLESPACE"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="14">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="USER"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="15">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="MATERIALIZED VIEW LOG"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="2">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="CONTEXT"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="3">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="DIMENSION"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="4">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="DIRECTORY"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="5">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="FUNCTION"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="6">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="PACKAGE"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="7">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="PROCEDURE"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="8">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="ROLE"/>
-            <value n="used" v="false"/>
-         </hash>
-         <hash n="9">
-            <value n="db" v="Oracle"/>
-            <value n="name" v="SEQUENCE"/>
-            <value n="used" v="true"/>
-         </hash>
-      </hash>
    </hash>
    <hash n="OSDDM_NamingStandard">
       <value n="applyToColumnCHC" v="true"/>
@@ -717,7 +250,7 @@
       <value n="applyToPK" v="true"/>
       <value n="applyToTableCHC" v="true"/>
       <value n="applyToUC" v="true"/>
-      <value n="prefForEntHierColumns" v="false"/>
+      <value n="prefForEntHierColumns" v="true"/>
    </hash>
    <hash n="OSDDM_ODConnections">
       <hash n="odconnections"/>
@@ -726,20 +259,13 @@
       <hash n="recent_files">
          <hash n="1">
             <value n="name" v="bonus"/>
-            <value n="path" v="C:\Users\gjpau\Documents\GitHub\bonus\datamodel"/>
+            <value n="path" v="U:\Documents\GitHub\bonus\datamodel"/>
+         </hash>
+         <hash n="2">
+            <value n="name" v="bonus"/>
+            <value n="path" v="C:\Users\allshare.gjp\Documents\Oracle SQL Developer Data Modeler\mywork\bonus\datamodel"/>
          </hash>
       </hash>
-   </hash>
-   <hash n="OSDDM_REPORTSPP">
-      <value n="company_name" v="Allshare"/>
-      <value n="def_reports_path" v="C:\Users\gjpau\Documents\GitHub\bonus\datamodel\report"/>
-      <value n="def_saxon_path" v=""/>
-      <value n="embed_diagrams_in_reports" v="true"/>
-      <value n="embed_main_diagram_in_reports" v="false"/>
-      <value n="generate_html_report_toc_in_separate_file" v="true"/>
-      <value n="group_by_schema_name_in_report" v="true"/>
-      <value n="include_select_statement_in_view_reports" v="true"/>
-      <value n="use_page_breaks" v="true"/>
    </hash>
    <hash n="OSDDM_RSConnections">
       <hash n="rsconnections"/>
@@ -748,15 +274,8 @@
       <hash n="user_defined_preferences"/>
    </hash>
    <hash n="proxy-options">
-      <value n="autoConfigScript" v=""/>
       <value n="IsIdeProxy" v="true"/>
-      <value n="proxyData" v="05E52C67708901546E337E06B6111923A0"/>
-      <value n="proxyExceptions" v=""/>
-      <value n="proxyHost" v=""/>
-      <value n="proxyPort" v="80"/>
       <value n="proxyType" v="SYSTEM_PROXY"/>
-      <value n="proxyUserName" v=""/>
-      <value n="useProxyAuthentication" v="false"/>
    </hash>
    <hash n="SaveActionsOptions">
       <value n="migratedSaveActions" v="true"/>
@@ -1925,7 +1444,7 @@
       </list>
       <list n="browserPathList">
          <string v="C:\Program Files\Internet Explorer\iexplore.exe"/>
-         <string v="C:\Program Files\Mozilla Firefox\firefox.exe"/>
+         <string v="C:\Program Files (x86)\Mozilla Firefox\firefox.exe"/>
          <string v="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"/>
       </list>
       <value n="useEmbeddedBrowserForPreview" v="false"/>
