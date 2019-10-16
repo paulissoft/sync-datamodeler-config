@@ -198,12 +198,12 @@ sub process ($)
     foreach my $dirs (@dirs) {
         my ($dir1, $dir2) = @$dirs;
         
-        print STDOUT "$operation from '$dir1' to '$dir2'\n"
-            if ($verbose);
-
         my $from = ($backup ? $dir1 : $dir2);
         my $to = ($backup ? $dir2 : $dir1);
         
+        print STDOUT "$operation from '$from' to '$to'\n"
+            if ($verbose);
+
         dircopy($from, $to);
         # do not clutter the source code repository with irrelevant files and empty directories
         datamodeler_config_cleanup($to)
