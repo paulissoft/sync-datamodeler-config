@@ -1,8 +1,12 @@
 <LayoutInfo>
    <clientLayoutData>
       <global>
+         <view-data ID="ExplorerWindow.SingletonExplorerWindow" ExplorerWindow.SingletonExplorerWindow.placeholder="foo"/>
          <view-data ClosedByUser="false" ID="LogWindow.Log"/>
       </global>
+      <Editing layout-name="Editing">
+         <view-data USE_LARGE_ICONS="true" pageSelection="" ID="PALETTEFACTORY.PALETTE"/>
+      </Editing>
    </clientLayoutData>
    <knownDockableFactories/>
    <knowTriggeredLayouts>

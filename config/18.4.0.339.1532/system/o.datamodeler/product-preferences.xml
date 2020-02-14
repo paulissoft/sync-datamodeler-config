@@ -12,30 +12,32 @@
             <url path="../../../../../"/>
          </list>
          <list n="dataModeler_DDL">
+            <url path="../../../../../Documents/GitHub/bonus/ddl/bonus.ddl"/>
+            <url path="../../../../../Documents/GitHub/bonus/ddl/ddl.xml"/>
+            <url path="../../../../../Documents/GitHub/bonus/ddl/bonus_history.ddl"/>
             <url protocol="file" path="/U:/Documents/GitHub/bonus/ddl/bonus.ddl"/>
             <url protocol="file" path="/U:/Documents/GitHub/bonus/ddl/ddl.xml"/>
-            <url path="../../../../../Documents/GitHub/bonus/ddl/ddl.xml"/>
-            <url path="../../../../../Documents/GitHub/bonus/ddl/bonus.ddl"/>
          </list>
          <list n="dataModeler_Domains">
-            <url protocol="file" path="/U:/Documents/GitHub/bonus/datamodel/domains.xml"/>
             <url path="../../../../../Documents/GitHub/bonus/datamodel/domains.xml"/>
+            <url protocol="file" path="/G:/bonus/datamodel/domains.xml"/>
+            <url protocol="file" path="/U:/Documents/GitHub/bonus/datamodel/domains.xml"/>
             <url path="../../../../../Documents/GitHub/bonus/datamodel/domains"/>
          </list>
          <list n="dataModeler_Glossary">
             <url path="../../../../../Documents/GitHub/bonus/datamodel/bonus.glossary"/>
          </list>
          <list n="dataModeler_OpenDesign">
-            <url protocol="file" path="/U:/Documents/GitHub/bonus/datamodel/TAB.pdf"/>
-            <url protocol="file" path="/U:/Documents/GitHub/bonus/datamodel/bonus.dmd"/>
             <url path="../../../../../Documents/GitHub/bonus/datamodel/bonus.dmd"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/TAB.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/ERD.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/ERD COLLABORATOR.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/ERD OBJECTIVE RESULT.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/ERD ADMINISTRATOR.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/TAB OBJECTIVE RESULT.pdf"/>
-            <url path="../../../../../Documents/GitHub/bonus/datamodel/TAB COLLABORATOR.pdf"/>
+            <url protocol="file" path="/G:/bonus/datamodel/ERD.pdf"/>
+            <url protocol="file" path="/G:/bonus/datamodel/TAB.pdf"/>
+            <url protocol="file" path="/G:/bonus/datamodel/ERD ADMINISTRATOR.pdf"/>
+            <url protocol="file" path="/G:/bonus/datamodel/ERD COLLABORATOR.pdf"/>
+            <url protocol="file" path="/G:/bonus/datamodel/ERD OBJECTIVE RESULT.pdf"/>
+            <url protocol="file" path="/G:/bonus/datamodel/TAB ADMINISTRATOR.pdf"/>
+            <url protocol="file" path="/G:/bonus/datamodel/TAB COLLABORATOR.pdf"/>
+            <url protocol="file" path="/G:/bonus/datamodel/TAB OBJECTIVE RESULT.pdf"/>
+            <url protocol="file" path="/G:/bonus/datamodel/bonus/"/>
          </list>
          <list n="dataModeler_Reports">
             <url path="../../../../../Documents/GitHub/bonus/datamodel/report/"/>
@@ -47,6 +49,7 @@
          </list>
          <list n="DEFAULT_CONTEXT">
             <url path="../../../../../"/>
+            <url protocol="file" path="/U:/Documents/GitHub/bonus/datamodel/"/>
             <url path="../../../../../Documents/GitHub/bonus/ddl/"/>
             <url path="../../../../../Documents/GitHub/bonus/datamodel/"/>
             <url protocol="file" path="/"/>
@@ -71,7 +74,7 @@
    </hash>
    <hash n="HelpOptions">
       <value n="helpCenterHeight" v="1056"/>
-      <value n="helpCenterWidth" v="500"/>
+      <value n="helpCenterWidth" v="657"/>
       <value n="helpCenterWindowOpen" v="false"/>
       <list n="openHelpDocuments">
          <url path="../../../../../../../usr/local/datamodeler/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-69B12E47-6075-4471-A205-BBB04113EE24.htm"/>
@@ -117,8 +120,10 @@
          <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
          <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
          <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
+         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
+         <url path="../../../../../../../usr/local/datamodeler-18.4/datamodeler/doc/datamodeler_help.jar" jar-entry="GUID-B9D13017-EC4F-421A-9AF8-B703DA75C00D.htm"/>
       </list>
-      <value n="splitterPosition" v="266"/>
+      <value n="splitterPosition" v="429"/>
    </hash>
    <hash n="MRUConnectionCache">
       <hash n="Connections">
@@ -190,10 +195,10 @@
    <hash n="OSDDM_CustomSettings">
       <hash n="custom_settings">
          <hash n="oracle.dbtools.crest.swingui.compare.xmlmeta.XMLMetadataComparator">
-            <value n="h" v="600"/>
-            <value n="hpos" v="519"/>
+            <value n="h" v="663"/>
+            <value n="hpos" v="533"/>
             <value n="vpos" v="203"/>
-            <value n="w" v="1100"/>
+            <value n="w" v="1133"/>
             <value n="x" v="220"/>
             <value n="y" v="215"/>
          </hash>
@@ -242,7 +247,7 @@
       <value n="use_columns_order_property_in_compare" v="false"/>
       <value n="use_data_type_kind_in_compare" v="false"/>
       <value n="use_quoted_identifiers" v="false"/>
-      <value n="use_schema_property_in_compare" v="true"/>
+      <value n="use_schema_property_in_compare" v="false"/>
       <value n="use_sql_dev_formatting" v="true"/>
    </hash>
    <hash n="OSDDM_DiagramLogicalModelPP">
@@ -261,7 +266,7 @@
          <hash n="oracle.dbtools.crest.swingui.admin.DesignLevelSettingsPropertiesDialog">
             <value n="dividerLocation" v="0"/>
             <value n="h" v="560.0"/>
-            <value n="treepath" v="/Settings/Diagram"/>
+            <value n="treepath" v="/Settings/DDL"/>
             <value n="w" v="670.0"/>
             <value n="x" v="625.0"/>
             <value n="y" v="240.0"/>
@@ -275,10 +280,10 @@
             <value n="y" v="265.0"/>
          </hash>
          <hash n="oracle.dbtools.crest.swingui.compare.CompareModelsDialog">
-            <value n="dividerLocation" v="350"/>
-            <value n="h" v="740.0"/>
+            <value n="dividerLocation" v="439"/>
+            <value n="h" v="888.0"/>
             <value n="treepath" v=""/>
-            <value n="w" v="905.0"/>
+            <value n="w" v="1145.0"/>
             <value n="x" v="594.0"/>
             <value n="y" v="82.0"/>
          </hash>
@@ -294,7 +299,7 @@
             <value n="dividerLocation" v="0"/>
             <value n="h" v="800.0"/>
             <value n="treepath" v=""/>
-            <value n="w" v="800.0"/>
+            <value n="w" v="1254.0"/>
             <value n="x" v="560.0"/>
             <value n="y" v="120.0"/>
          </hash>
@@ -315,7 +320,7 @@
             <value n="y" v="315.0"/>
          </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.datatypes.DistinctTypePropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
+            <value n="dividerLocation" v="190"/>
             <value n="h" v="460.0"/>
             <value n="treepath" v="/General"/>
             <value n="w" v="650.0"/>
@@ -325,7 +330,7 @@
          <hash n="oracle.dbtools.crest.swingui.editor.DesignPropertiesDialog">
             <value n="dividerLocation" v="0"/>
             <value n="h" v="550.0"/>
-            <value n="treepath" v="/Summary"/>
+            <value n="treepath" v="/Settings/DDL"/>
             <value n="w" v="650.0"/>
             <value n="x" v="635.0"/>
             <value n="y" v="245.0"/>
@@ -333,7 +338,7 @@
          <hash n="oracle.dbtools.crest.swingui.editor.DomainPropertiesDialogEx">
             <value n="dividerLocation" v="190"/>
             <value n="h" v="620.0"/>
-            <value n="treepath" v="/General"/>
+            <value n="treepath" v="/Used in"/>
             <value n="w" v="650.0"/>
             <value n="x" v="635.0"/>
             <value n="y" v="210.0"/>
@@ -349,7 +354,7 @@
          <hash n="oracle.dbtools.crest.swingui.editor.logical.AttributePropertiesDialogEx">
             <value n="dividerLocation" v="190"/>
             <value n="h" v="600.0"/>
-            <value n="treepath" v="/Default and Constraint"/>
+            <value n="treepath" v="/General"/>
             <value n="w" v="780.0"/>
             <value n="x" v="296.0"/>
             <value n="y" v="202.0"/>
@@ -359,8 +364,8 @@
             <value n="h" v="560.0"/>
             <value n="treepath" v="/Attributes"/>
             <value n="w" v="880.0"/>
-            <value n="x" v="1024.0"/>
-            <value n="y" v="367.0"/>
+            <value n="x" v="997.0"/>
+            <value n="y" v="288.0"/>
          </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.logical.EntityViewPropertiesDialogEx">
             <value n="dividerLocation" v="0"/>
@@ -435,9 +440,9 @@
             <value n="y" v="245.0"/>
          </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.relational.IndexPropertiesDialogEx">
-            <value n="dividerLocation" v="0"/>
+            <value n="dividerLocation" v="190"/>
             <value n="h" v="540.0"/>
-            <value n="treepath" v="/General"/>
+            <value n="treepath" v="/Impact Analysis"/>
             <value n="w" v="770.0"/>
             <value n="x" v="575.0"/>
             <value n="y" v="245.0"/>
@@ -453,7 +458,7 @@
          <hash n="oracle.dbtools.crest.swingui.editor.relational.SchemaObjectPropertiesDialogEx">
             <value n="dividerLocation" v="190"/>
             <value n="h" v="600.0"/>
-            <value n="treepath" v="/Indexes"/>
+            <value n="treepath" v="/Rest Services"/>
             <value n="w" v="900.0"/>
             <value n="x" v="510.0"/>
             <value n="y" v="215.0"/>
@@ -461,7 +466,7 @@
          <hash n="oracle.dbtools.crest.swingui.editor.relational.TablePropertiesDialogEx">
             <value n="dividerLocation" v="170"/>
             <value n="h" v="784.0"/>
-            <value n="treepath" v="/Indexes"/>
+            <value n="treepath" v="/Columns"/>
             <value n="w" v="1061.0"/>
             <value n="x" v="429.0"/>
             <value n="y" v="128.0"/>
@@ -473,6 +478,22 @@
             <value n="w" v="1204.0"/>
             <value n="x" v="358.0"/>
             <value n="y" v="181.0"/>
+         </hash>
+         <hash n="oracle.dbtools.crest.swingui.editor.storage.oracle.FunctionPropertyDialogOracle">
+            <value n="dividerLocation" v="0"/>
+            <value n="h" v="352.0"/>
+            <value n="treepath" v=""/>
+            <value n="w" v="466.0"/>
+            <value n="x" v="727.0"/>
+            <value n="y" v="344.0"/>
+         </hash>
+         <hash n="oracle.dbtools.crest.swingui.editor.storage.oracle.TableCheckConstraintPropertyDialogOracle">
+            <value n="dividerLocation" v="0"/>
+            <value n="h" v="442.0"/>
+            <value n="treepath" v=""/>
+            <value n="w" v="466.0"/>
+            <value n="x" v="727.0"/>
+            <value n="y" v="299.0"/>
          </hash>
          <hash n="oracle.dbtools.crest.swingui.editor.storage.oracle.v10g.UserPropertyDialogOraclev10g">
             <value n="dividerLocation" v="0"/>
@@ -537,8 +558,8 @@
       <value n="def_ddl_files_path" v="C:\Users\gjpau\Documents\GitHub\bonus\ddl"/>
       <value n="incl_des_name_in_ddl_files_path" v="true"/>
       <value n="last_export_folder" v=""/>
-      <value n="last_open_design" v=""/>
-      <value n="last_open_dpv" v=""/>
+      <value n="last_open_design" v="C:\Users\gjpau\Documents\GitHub\bonus\datamodel\bonus.dmd"/>
+      <value n="last_open_dpv" v="108B157D-35A5-41BB-9EB4-EE1A7D3E69B1"/>
       <value n="page_height" v="595.0"/>
       <value n="page_margin_height" v="595.0"/>
       <value n="page_margin_width" v="842.0"/>
@@ -552,7 +573,7 @@
    </hash>
    <hash n="OSDDM_ModelingPP">
       <value n="def_import_path" v=""/>
-      <value n="def_proj_path" v="U:\Documents\GitHub\bonus\datamodel"/>
+      <value n="def_proj_path" v="G:\bonus\datamodel\bonus"/>
       <value n="def_save_path" v=""/>
       <value n="def_sys_types_path" v=""/>
       <value n="reload_last_state" v="false"/>
@@ -569,6 +590,24 @@
       <value n="propagate_pk_attr_notes" v="false"/>
       <value n="source_optional" v="true"/>
       <value n="target_optional" v="false"/>
+   </hash>
+   <hash n="OSDDM_ModelPhysicalDB2PP">
+      <value n="db2_auto_inc_ddl" v="NONE"/>
+      <value n="db2_database" v="DSNDB04"/>
+      <value n="db2_identity_ddl" v="IDENTITY_CLAUSE"/>
+      <value n="db2_owner" v="[Implicit]"/>
+      <value n="db2_sequence_name" v=""/>
+      <value n="db2_trigger_name" v=""/>
+      <value n="default_index_storagetemplate_name" v=""/>
+      <value n="default_ts_storagetemplate_name" v=""/>
+      <value n="naming_rule_st_index_db2" v=""/>
+      <value n="naming_rule_st_tablespace_db2" v=""/>
+      <value n="naming_rule_tablespace_db2" v=""/>
+      <value n="new_db2_storagetemplate_per_index" v="false"/>
+      <value n="new_db2_storagetemplate_per_tablesapce" v="false"/>
+      <value n="new_db2_tablespace_per_table" v="false"/>
+      <value n="one_db2_storagetemplate_per_index" v="false"/>
+      <value n="one_db2_storagetemplate_per_ts" v="false"/>
    </hash>
    <hash n="OSDDM_ModelPhysicalOraclePP">
       <value n="oracle_auto_inc_ddl" v="DEFAULT_CLAUSE"/>
@@ -735,17 +774,13 @@
       <hash n="recent_files">
          <hash n="1">
             <value n="name" v="bonus"/>
-            <value n="path" v="U:\Documents\GitHub\bonus\datamodel"/>
-         </hash>
-         <hash n="2">
-            <value n="name" v="bonus"/>
             <value n="path" v="C:\Users\gjpau\Documents\GitHub\bonus\datamodel"/>
          </hash>
       </hash>
    </hash>
    <hash n="OSDDM_REPORTSPP">
       <value n="company_name" v="Allshare"/>
-      <value n="def_reports_path" v="C:\Users\gjpau\Documents\GitHub\bonus\datamodel\report"/>
+      <value n="def_reports_path" v="G:\bonus\datamodel\report"/>
       <value n="def_saxon_path" v=""/>
       <value n="embed_diagrams_in_reports" v="true"/>
       <value n="embed_main_diagram_in_reports" v="false"/>
@@ -756,6 +791,11 @@
    </hash>
    <hash n="OSDDM_RSConnections">
       <hash n="rsconnections"/>
+   </hash>
+   <hash n="OSDDM_SEARCHPP">
+      <value n="search_as_u_type" v="false"/>
+      <value n="search_as_u_type_start" v="3"/>
+      <list n="search_profiles_paths"/>
    </hash>
    <hash n="OSDDM_UserDefinedPreferencesPP">
       <hash n="user_defined_preferences"/>

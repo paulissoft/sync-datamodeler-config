@@ -769,13 +769,13 @@ end]]>
 	</lib>
 
 
-	<ddl_transformation_script_set id="B4E65BCB-CFF5-1302-E0BC-0C329BF9890E" name="Journal tables" description="" active="false">
+	<ddl_transformation_script_set id="B4E65BCB-CFF5-1302-E0BC-0C329BF9890E" name="Journal tables" description="" active="true">
 			<script id="9836D087-881D-2161-19AF-2C6DF49A964A"/>
 			<script id="1C0CDD35-A0D6-47E5-C702-7FB537C8A8C0"/>
 			<script id="B50F3C56-0DC4-6376-8CF9-9CB189DC97DD"/>
 			<script id="DC383793-5C2E-F62A-5241-35B8ACE86134"/>
 	</ddl_transformation_script_set>
-	<ddl_transformation_script_set id="86649BAE-547E-99D5-8B00-54B3BB9BB6BB" name="Empty script" description="" active="true">
+	<ddl_transformation_script_set id="86649BAE-547E-99D5-8B00-54B3BB9BB6BB" name="Empty script" description="" active="false">
 			<script id="0DC38187-8245-8904-7E00-D4B6DF394899"/>
 			<script id="27EEAD3F-3367-9D6F-8E02-D44189C855A1"/>
 			<script id="83D0D285-DF95-0BE7-EF4F-AC3F2D9CDE94"/>

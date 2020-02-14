@@ -1,6 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <dt-cache class="java.util.HashMap" xmlns="http://xmlns.oracle.com/jdeveloper/110000/dt-cache">
    <Item>
+      <Key>QuickDiff.Reference</Key>
+      <Value class="java.lang.String">FileOnDisk</Value>
+   </Item>
+   <Item>
       <Key>SyntaxSchemes</Key>
       <Value class="oracle.ide.ceditor.options.SyntaxSchemes">
          <schemeMap>
@@ -838,7 +842,7 @@
    </Item>
    <Item>
       <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Mode</Key>
-      <Value class="java.lang.String">Incoming Changes</Value>
+      <Value class="java.lang.String">Outgoing Changes</Value>
    </Item>
    <Item>
       <Key>oracle.dbtools.crest.fcp.vcs.svn.SVNChangeListWindow.Outgoing Changes.DisplaySettings_</Key>
