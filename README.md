@@ -13,8 +13,9 @@ The official way to share the global configuration between computers is to use
 the various import and export utilities from the Data Modeler. However this is
 quite time consuming and thus error prone.
 
-An easier approach is to just backup these settings to a Git repository (this
-one) and restore them when needed. This project tries to accomplish just that: KISS.
+An easier approach is to just backup these settings to a directory you specify
+as a command line option (ideally under version control). Then you can restore
+them when needed. This project tries to accomplish just that: KISS.
 
 ## Usage
 
@@ -28,11 +29,11 @@ $ perl datamodeler_config.pl --help
 ## Global configuration
 
 The configuration can be found in the following directories:
-* datamodeler/types (for a datamodeler installation home)
+* datamodeler/types (inside the datamodeler installation home)
 * %APPDATA%\Oracle SQL Developer Data Modeler\system<VER_FULL> (for Windows)
 * ~/.oraclesqldeveloperdatamodeler/system<VER_FULL> (for Unix)
 
-The version  VER_FULL can be found in the installation directory of the Data Modeler
+The version VER_FULL can be found in the installation directory of the Data Modeler
 where the file datamodeler/bin/version.properties contains a line like this:
 
   VER_FULL=18.4.0.339.1532

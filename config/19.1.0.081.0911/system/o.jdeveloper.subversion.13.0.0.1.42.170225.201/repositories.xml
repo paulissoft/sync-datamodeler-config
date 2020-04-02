@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<svn-repositories xmlns="http://xmlns.oracle.com/jdeveloper/1013/svn/repositories">
-    <svn-repository>
-        <url>https://github.com/gpaulissen/bonus</url>
-        <alias>bonus</alias>
-        <user-name>gpaulissen</user-name>
-        <password>BXnIiTbmfsssh+5dGMuPKMqUwLLPCLXAC+W/V9ee68B6</password>
-    </svn-repository>
-</svn-repositories>

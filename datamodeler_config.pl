@@ -48,11 +48,17 @@ This help.
 
 =item B<--backup>
 
-Perform a backup. Files are stored in config/<version>. You can not restore at the same time.
+Perform a backup. Files are stored in the config directory as specified by the
+command line option. You can not restore at the same time.
+
+=item B<--config-directory>
+
+The directory to backup to or restore from. Mandatory.
 
 =item B<--restore>
 
-Perform a restore. You can not backup at the same time.
+Perform a restore from the config directory as specified by the
+command line option. You can not backup at the same time.
 
 =item B<--verbose>
 
@@ -82,6 +88,11 @@ $Header$
 
 First version.
 
+2020-04-02  G.J. Paulissen
+
+Second version where the directory to backup to or restore from needs to be
+specified.
+
 =cut
 
 use 5.008; # Perl 5.8 should be OK
@@ -94,6 +105,7 @@ use File::Basename;
 use lib &dirname($0); # to find File::Copy::Recursive in this directory
 use File::Copy::Recursive qw(dircopy);
 use File::Find;
+use File::Path qw(remove_tree);
 use File::Spec;
 use Getopt::Long;
 use Pod::Usage;
@@ -102,7 +114,7 @@ use Env qw(HOME APPDATA);
 # VARIABLES
 
 my $program = &basename($0);
-my $datamodeler_config_root = dirname($0);
+my $config_directory = undef;
     
 # command line options
 my $backup = 0;
@@ -117,7 +129,7 @@ sub main ();
 sub process_command_line ();
 sub process ($);
 sub get_version ($);
-sub datamodeler_config_cleanup ($);
+sub config_cleanup ($);
                                                          
 # MAIN
 
@@ -156,6 +168,7 @@ sub process_command_line ()
     #
     GetOptions('help' => sub { pod2usage(-verbose => 2) },
                'backup' => \$backup,
+               'config-directory:s' => \$config_directory,
                'restore' => \$restore,
                'verbose+' => \$verbose
         )
@@ -164,6 +177,8 @@ sub process_command_line ()
     #
     pod2usage(-message => "$0: Must supply at least one Oracle SQL Developer Data Modeler home. Run with --help option.\n") unless @ARGV >= 1;
 
+    pod2usage(-message => "$0: The config directory ($config_directory) must exist and be writable. Run with --help option.\n") unless -d $config_directory && -w $config_directory;
+    
     pod2usage(-message => "$0: Must either backup or restore but not both. Run with --help option.\n") unless $backup + $restore == 1;
 
     foreach my $datamodeler_home (@ARGV) {
@@ -192,8 +207,8 @@ sub process ($)
     print STDOUT "\n*** $operation $datamodeler_home ***\n"
         if ($verbose);
 
-    push(@dirs, [ File::Spec->catdir($datamodeler_home, 'datamodeler', 'types'), File::Spec->catdir($datamodeler_config_root, 'config', $version, 'datamodeler', 'types') ]);
-    push(@dirs, [ File::Spec->catdir($user_config, "system$version"), File::Spec->catdir($datamodeler_config_root, 'config', $version, 'system') ]);
+    push(@dirs, [ File::Spec->catdir($datamodeler_home, 'datamodeler', 'types'), File::Spec->catdir($config_directory, $version, 'datamodeler', 'types') ]);
+    push(@dirs, [ File::Spec->catdir($user_config, "system$version"), File::Spec->catdir($config_directory, $version, 'system') ]);
 
     foreach my $dirs (@dirs) {
         my ($dir1, $dir2) = @$dirs;
@@ -206,7 +221,7 @@ sub process ($)
 
         dircopy($from, $to);
         # do not clutter the source code repository with irrelevant files and empty directories
-        datamodeler_config_cleanup($to)
+        config_cleanup($to)
             if ($backup);
     }
 }
@@ -228,14 +243,20 @@ sub get_version ($)
         
         $hash{$key} = $val
             if (defined($key));
+
+        last
+            if (defined($key) && $key eq 'VER_FULL');
     }
 
     close $fh || die "Can not close $file: $!";
 
+    print STDOUT "*** Version from $file: ", $hash{VER_FULL}, " ***\n"
+        if ($verbose);    
+
     return $hash{VER_FULL};
 }
 
-sub datamodeler_config_cleanup ($) {
+sub config_cleanup ($) {
     my $dir = $_[0];
     my @file_list;
     my $rs = sub {
@@ -243,9 +264,22 @@ sub datamodeler_config_cleanup ($) {
             if (-f && !(m/\.(xml)$/)); # only keep xml files
     };
 
+    print STDOUT "\n*** cleanup config directory $dir ***\n"
+        if ($verbose);
+
     find($rs, $dir);
 
     unlink @file_list;
+
+    my @dir_list;
+    $rs = sub {
+        push(@dir_list, $File::Find::name)
+            if (-d && (m/^system_cache/)); # remove system_cache directories
+    };
+    
+    find($rs, $dir);
+
+    remove_tree(@dir_list, { verbose => $verbose });
 
     # Remove empty directories.
     # Use eval to ignore errors due to $_ being a file, the current directory (.) or not empty.
