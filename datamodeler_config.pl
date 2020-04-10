@@ -175,11 +175,14 @@ sub process_command_line ()
         or pod2usage(-verbose => 0);
 
     #
-    pod2usage(-message => "$0: Must supply at least one Oracle SQL Developer Data Modeler home. Run with --help option.\n") unless @ARGV >= 1;
+    pod2usage(-message => "$0: Must supply at least one Oracle SQL Developer Data Modeler home. Run with --help option.\n")
+        unless @ARGV >= 1;
 
-    pod2usage(-message => "$0: The config directory ($config_directory) must exist and be writable. Run with --help option.\n") unless -d $config_directory && -w $config_directory;
+    pod2usage(-message => "$0: The config directory must exist and be writable. Run with --help option.\n")
+        unless defined($config_directory) && -d $config_directory && -w $config_directory;
     
-    pod2usage(-message => "$0: Must either backup or restore but not both. Run with --help option.\n") unless $backup + $restore == 1;
+    pod2usage(-message => "$0: Must either backup or restore but not both. Run with --help option.\n")
+        unless $backup + $restore == 1;
 
     foreach my $datamodeler_home (@ARGV) {
         my $version = undef;
