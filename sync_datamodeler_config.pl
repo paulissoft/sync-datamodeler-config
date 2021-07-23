@@ -4,11 +4,11 @@
 
 =head1 NAME
 
-datamodeler_config.pl - Backup or restore the (global) Oracle SQL Developer Data Modeler configuration.
+sync_datamodeler_config.pl - Backup or restore the (global) Oracle SQL Developer Data Modeler configuration.
 
 =head1 SYNOPSIS
 
-  datamodeler_config.pl [OPTION...] [DATAMODELER_HOME...]
+  sync_datamodeler_config.pl [OPTION...] [DATAMODELER_HOME...]
 
 =head1 DESCRIPTION
 
