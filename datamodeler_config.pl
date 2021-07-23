@@ -8,14 +8,16 @@ datamodeler_config.pl - Backup or restore the (global) Oracle SQL Developer Data
 
 =head1 SYNOPSIS
 
-  datamodeler_config.pl [OPTION...] DATAMODELER_HOME...
+  datamodeler_config.pl [OPTION...] [DATAMODELER_HOME...]
 
 =head1 DESCRIPTION
 
 This utility saves and restores the global Oracle SQL Developer Data Modeler configuration. Currently only XML files are saved and thus restored.
 
-On the command line you can specify one or more datamodeler installation
-homes. For each installation home you should find the file
+On the command line you can specify zero or more datamodeler installation
+homes (zero for the Mac OS X since
+/Applications/OracleDataModeler.app/Contents/Resources/datamodeler is the installation
+home, else at least one). For each installation home you should find the file
 datamodeler/bin/version.properties with a line like:
 
   VER_FULL=18.4.0.339.1532
@@ -175,8 +177,16 @@ sub process_command_line ()
         or pod2usage(-verbose => 0);
 
     #
-    pod2usage(-message => "$0: Must supply at least one Oracle SQL Developer Data Modeler home. Run with --help option.\n")
-        unless @ARGV >= 1;
+    if ($^O eq 'MSWin32') {
+        pod2usage(-message => "$0: Must supply at least one Oracle SQL Developer Data Modeler home. Run with --help option.\n")
+            unless @ARGV >= 1;
+    } elsif ($^O eq 'darwin') {
+        pod2usage(-message => "$0: Should NOT supply an Oracle SQL Developer Data Modeler home on Mac OS X. Run with --help option.\n")
+            unless @ARGV == 0;
+        push(@ARGV, '/Applications/OracleDataModeler.app/Contents/Resources/datamodeler');
+    } else {
+        pod2usage(-message => "$0: This script only works on Windows or MAC OS X. Run with --help option.\n");
+    }
 
     pod2usage(-message => "$0: The config directory must exist and be writable. Run with --help option.\n")
         unless defined($config_directory) && -d $config_directory && -w $config_directory;
