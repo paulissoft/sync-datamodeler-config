@@ -57,6 +57,10 @@ command line option. You can not restore at the same time.
 
 The directory to backup to or restore from. Mandatory.
 
+=item B<--config-version>
+
+The configuration version to use instead of the installation home version. Useful when upgrading Data Modeler where you want to use the old Data Modeler version as the configuration version to restore from.
+
 =item B<--restore>
 
 Perform a restore from the config directory as specified by the
@@ -72,13 +76,25 @@ Increase verbose logging. Defaults to 0.
 
 =head1 EXAMPLES
 
+When you upgrade Data Modeler, the tool asks whether to import settings from a previous version. However it seems to forget settings like Custom Transformation Scripts. Therefore backup first the old version, next install the new version and then restore the old settings using this script.
+
+This example is from my Mac OS X, where the installation home is fixed.
+
+Backup (old version is 18.4.0.339.1532) using this command:
+
+  $ perl sync_datamodeler_config.pl --config-directory /tmp --backup
+
+After installing the new Data Modeler version, restore the old settings using this command:
+
+  $ perl sync_datamodeler_config.pl --config-directory /tmp --config-version 18.4.0.339.1532 --restore
+
 =head1 BUGS
 
 =head1 SEE ALSO
 
 =head1 AUTHOR
 
-Gert-Jan Paulissen, E<lt>gjpaulissen@allshare.frE<gt>.
+Gert-Jan Paulissen.
 
 =head1 VERSION
 
@@ -94,6 +110,10 @@ First version.
 
 Second version where the directory to backup to or restore from needs to be
 specified.
+
+2021-07-26  G.J. Paulissen
+
+Third version where the configuration version can be specified and where the installation home for a Mac need not be specified.
 
 =cut
 
@@ -116,12 +136,15 @@ use Env qw(HOME APPDATA);
 # VARIABLES
 
 my $program = &basename($0);
-my $config_directory = undef;
-    
+
 # command line options
+
+my $config_directory = undef;
+my $config_version = undef;
 my $backup = 0;
 my $restore = 0;
 my $verbose = 0;
+my $version_config = undef;
 
 my $datamodeler_home;
 
@@ -171,21 +194,20 @@ sub process_command_line ()
     GetOptions('help' => sub { pod2usage(-verbose => 2) },
                'backup' => \$backup,
                'config-directory:s' => \$config_directory,
+               'config-version:s' => \$config_version,
                'restore' => \$restore,
                'verbose+' => \$verbose
         )
         or pod2usage(-verbose => 0);
 
     #
-    if ($^O eq 'MSWin32') {
-        pod2usage(-message => "$0: Must supply at least one Oracle SQL Developer Data Modeler home. Run with --help option.\n")
-            unless @ARGV >= 1;
-    } elsif ($^O eq 'darwin') {
+    if ($^O eq 'darwin') {
         pod2usage(-message => "$0: Should NOT supply an Oracle SQL Developer Data Modeler home on Mac OS X. Run with --help option.\n")
             unless @ARGV == 0;
         push(@ARGV, '/Applications/OracleDataModeler.app/Contents/Resources/datamodeler');
     } else {
-        pod2usage(-message => "$0: This script only works on Windows or MAC OS X. Run with --help option.\n");
+        pod2usage(-message => "$0: Must supply at least one Oracle SQL Developer Data Modeler home. Run with --help option.\n")
+            unless @ARGV >= 1;
     }
 
     pod2usage(-message => "$0: The config directory must exist and be writable. Run with --help option.\n")
@@ -220,8 +242,8 @@ sub process ($)
     print STDOUT "\n*** $operation $datamodeler_home ***\n"
         if ($verbose);
 
-    push(@dirs, [ File::Spec->catdir($datamodeler_home, 'datamodeler', 'types'), File::Spec->catdir($config_directory, $version, 'datamodeler', 'types') ]);
-    push(@dirs, [ File::Spec->catdir($user_config, "system$version"), File::Spec->catdir($config_directory, $version, 'system') ]);
+    push(@dirs, [ File::Spec->catdir($datamodeler_home, 'datamodeler', 'types'), File::Spec->catdir($config_directory, (defined($config_version) ? $config_version : $version), 'datamodeler', 'types') ]);
+    push(@dirs, [ File::Spec->catdir($user_config, "system$version"), File::Spec->catdir($config_directory, (defined($config_version) ? $config_version : $version), 'system') ]);
 
     foreach my $dirs (@dirs) {
         my ($dir1, $dir2) = @$dirs;
